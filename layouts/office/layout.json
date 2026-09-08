@@ -2417,31 +2417,56 @@
    }
   },
   {
-   "uid": "f-ffd51757ee",
-   "type": "LARGE_PLANT",
+   "uid": "f-24d385e7cc",
+   "type": "COFFEE_TABLE",
    "col": 7,
+   "row": 2,
+   "color": {
+    "h": 0,
+    "s": -10,
+    "b": -22,
+    "c": 12
+   }
+  },
+  {
+   "uid": "f-0603606944",
+   "type": "COFFEE",
+   "col": 8,
    "row": 3
   },
   {
-   "uid": "f-601e929dbd",
+   "uid": "f-a2aa03e974",
+   "type": "SOFA_BACK",
+   "col": 7,
+   "row": 4,
+   "color": {
+    "h": 25,
+    "s": 32,
+    "b": -22,
+    "c": 15,
+    "colorize": true
+   }
+  },
+  {
+   "uid": "f-d25530c549",
    "type": "PLANT_2",
    "col": 12,
    "row": 4
   },
   {
-   "uid": "f-420d1b6d3d",
+   "uid": "f-52f9a70e5c",
    "type": "WHITEBOARD",
    "col": 14,
    "row": -1
   },
   {
-   "uid": "f-9bd49dea7d",
-   "type": "CLOCK",
-   "col": 18,
+   "uid": "f-93a85c2aa7",
+   "type": "LARGE_PAINTING",
+   "col": 17,
    "row": -1
   },
   {
-   "uid": "f-27721f6fb0",
+   "uid": "f-77554ccbde",
    "type": "SMALL_TABLE_FRONT",
    "col": 16,
    "row": 2,
@@ -2453,7 +2478,7 @@
    }
   },
   {
-   "uid": "f-a1bd28f2a9",
+   "uid": "f-96d283834a",
    "type": "CUSHIONED_CHAIR_FRONT",
    "col": 16,
    "row": 1,
@@ -2466,7 +2491,7 @@
    }
   },
   {
-   "uid": "f-48371d6c5f",
+   "uid": "f-b03a54260e",
    "type": "CUSHIONED_CHAIR_SIDE",
    "col": 15,
    "row": 3,
@@ -2479,7 +2504,7 @@
    }
   },
   {
-   "uid": "f-335006e647",
+   "uid": "f-e001650746",
    "type": "CUSHIONED_CHAIR_SIDE:left",
    "col": 18,
    "row": 3,
@@ -2492,7 +2517,7 @@
    }
   },
   {
-   "uid": "f-f694cdbdaf",
+   "uid": "f-432d18c260",
    "type": "CUSHIONED_CHAIR_BACK",
    "col": 16,
    "row": 4,
@@ -2505,7 +2530,7 @@
    }
   },
   {
-   "uid": "f-4cebcbdf4c",
+   "uid": "f-46ca332519",
    "type": "CUSHIONED_CHAIR_BACK",
    "col": 17,
    "row": 4,
@@ -2518,22 +2543,28 @@
    }
   },
   {
-   "uid": "f-6a024fa911",
+   "uid": "f-9532e17990",
    "type": "PLANT",
    "col": 14,
    "row": 4
   },
   {
-   "uid": "f-65d27e2ff4",
+   "uid": "f-3fb77bea12",
+   "type": "CACTUS",
+   "col": 14,
+   "row": 1
+  },
+  {
+   "uid": "f-c732e984fd",
    "type": "SMALL_PAINTING_2",
    "col": 13,
    "row": 6
   },
   {
-   "uid": "f-0ccbc312ad",
-   "type": "COFFEE_TABLE",
+   "uid": "f-52c539c445",
+   "type": "SMALL_TABLE_FRONT",
    "col": 8,
-   "row": 10,
+   "row": 9,
    "color": {
     "h": 0,
     "s": -10,
@@ -2542,13 +2573,13 @@
    }
   },
   {
-   "uid": "f-389fea1032",
+   "uid": "f-994ef09f82",
    "type": "COFFEE",
    "col": 9,
    "row": 10
   },
   {
-   "uid": "f-634e4a7756",
+   "uid": "f-02ccecd6ed",
    "type": "SOFA_FRONT",
    "col": 8,
    "row": 12,
@@ -2561,13 +2592,19 @@
    }
   },
   {
-   "uid": "f-4c5cfbbf81",
+   "uid": "f-2f3b9b6898",
    "type": "PLANT_2",
    "col": 13,
    "row": 8
   },
   {
-   "uid": "f-7cebc6b936",
+   "uid": "f-469771d660",
+   "type": "LARGE_PAINTING",
+   "col": 11,
+   "row": 6
+  },
+  {
+   "uid": "f-7546856973",
    "type": "CUSHIONED_CHAIR_FRONT",
    "col": 12,
    "row": 10,
@@ -2580,7 +2617,7 @@
    }
   },
   {
-   "uid": "f-38583e6aec",
+   "uid": "f-3f5cd3730a",
    "type": "DESK_FRONT",
    "col": 11,
    "row": 11,
@@ -2592,43 +2629,49 @@
    }
   },
   {
-   "uid": "f-861d98899e",
+   "uid": "f-5d1c8e1d13",
    "type": "PC_BACK",
    "col": 12,
    "row": 11
   },
   {
-   "uid": "f-1561b51286",
+   "uid": "f-4f66e02460",
    "type": "CLOCK",
    "col": 1,
    "row": 6
   },
   {
-   "uid": "f-cbf716174a",
+   "uid": "f-e5c4a68896",
    "type": "WHITEBOARD",
    "col": 4,
    "row": 6
   },
   {
-   "uid": "f-7ddaf378c1",
+   "uid": "f-a0552df658",
+   "type": "HANGING_PLANT",
+   "col": 6,
+   "row": 6
+  },
+  {
+   "uid": "f-16624a636e",
    "type": "DESK_FRONT",
    "col": 1,
    "row": 8
   },
   {
-   "uid": "f-57258ef7c1",
+   "uid": "f-8a2aab5690",
    "type": "PC_FRONT_OFF",
    "col": 1,
    "row": 8
   },
   {
-   "uid": "f-a026139ac7",
+   "uid": "f-43c09de3de",
    "type": "PC_FRONT_OFF",
    "col": 3,
    "row": 8
   },
   {
-   "uid": "f-2fb6ed33f0",
+   "uid": "f-109e0b1062",
    "type": "CUSHIONED_CHAIR_BACK",
    "col": 1,
    "row": 10,
@@ -2641,7 +2684,7 @@
    }
   },
   {
-   "uid": "f-bc17450b82",
+   "uid": "f-339e3d4103",
    "type": "CUSHIONED_CHAIR_BACK",
    "col": 3,
    "row": 10,
@@ -2654,25 +2697,25 @@
    }
   },
   {
-   "uid": "f-791f00e250",
+   "uid": "f-4b9f14eafd",
    "type": "DESK_FRONT",
    "col": 5,
    "row": 8
   },
   {
-   "uid": "f-a522f0cd34",
+   "uid": "f-d682122572",
    "type": "PC_FRONT_OFF",
    "col": 5,
    "row": 8
   },
   {
-   "uid": "f-a40dfc1503",
+   "uid": "f-6420652d28",
    "type": "PC_FRONT_OFF",
    "col": 7,
    "row": 8
   },
   {
-   "uid": "f-89875eec3d",
+   "uid": "f-5db5ec8409",
    "type": "CUSHIONED_CHAIR_BACK",
    "col": 5,
    "row": 10,
@@ -2685,7 +2728,7 @@
    }
   },
   {
-   "uid": "f-91ce7dcd3b",
+   "uid": "f-81a21a5804",
    "type": "CUSHIONED_CHAIR_BACK",
    "col": 7,
    "row": 10,
@@ -2698,25 +2741,25 @@
    }
   },
   {
-   "uid": "f-7fa9e44df6",
+   "uid": "f-f65274a8a0",
    "type": "DESK_FRONT",
    "col": 1,
    "row": 11
   },
   {
-   "uid": "f-3fe4c290ec",
+   "uid": "f-8234b98858",
    "type": "PC_FRONT_OFF",
    "col": 1,
    "row": 11
   },
   {
-   "uid": "f-aa3e6d2269",
+   "uid": "f-64b2e4a593",
    "type": "PC_FRONT_OFF",
    "col": 3,
    "row": 11
   },
   {
-   "uid": "f-12062b900a",
+   "uid": "f-01920cda43",
    "type": "CUSHIONED_CHAIR_BACK",
    "col": 1,
    "row": 13,
@@ -2729,7 +2772,7 @@
    }
   },
   {
-   "uid": "f-610752857d",
+   "uid": "f-98dba30560",
    "type": "CUSHIONED_CHAIR_BACK",
    "col": 3,
    "row": 13,
@@ -2742,25 +2785,25 @@
    }
   },
   {
-   "uid": "f-2d1bddb64d",
+   "uid": "f-dea5a04c42",
    "type": "DESK_FRONT",
    "col": 5,
    "row": 11
   },
   {
-   "uid": "f-fc78b4ccc0",
+   "uid": "f-aa83aca9e6",
    "type": "PC_FRONT_OFF",
    "col": 5,
    "row": 11
   },
   {
-   "uid": "f-ce3aac5675",
+   "uid": "f-81c55ab0a4",
    "type": "PC_FRONT_OFF",
    "col": 7,
    "row": 11
   },
   {
-   "uid": "f-d8ba6c3858",
+   "uid": "f-36eac9eab9",
    "type": "CUSHIONED_CHAIR_BACK",
    "col": 5,
    "row": 13,
@@ -2773,7 +2816,7 @@
    }
   },
   {
-   "uid": "f-b906886c70",
+   "uid": "f-481502eb7e",
    "type": "CUSHIONED_CHAIR_BACK",
    "col": 7,
    "row": 13,
@@ -2786,13 +2829,13 @@
    }
   },
   {
-   "uid": "f-155dd2797d",
+   "uid": "f-eecd410f17",
    "type": "BOOKSHELF",
    "col": 14,
    "row": 7
   },
   {
-   "uid": "f-e260f9dbba",
+   "uid": "f-3e4028488a",
    "type": "DESK_FRONT",
    "col": 14,
    "row": 8,
@@ -2804,19 +2847,19 @@
    }
   },
   {
-   "uid": "f-bcd244dcdc",
+   "uid": "f-a60ffbe01d",
    "type": "COFFEE",
    "col": 14,
    "row": 9
   },
   {
-   "uid": "f-491fa029ef",
+   "uid": "f-ade4f7b10c",
    "type": "COFFEE",
    "col": 16,
    "row": 9
   },
   {
-   "uid": "f-3758bc342f",
+   "uid": "f-82ecb7abd9",
    "type": "WOODEN_BENCH",
    "col": 14,
    "row": 10,
@@ -2829,7 +2872,7 @@
    }
   },
   {
-   "uid": "f-df7aef98bf",
+   "uid": "f-824054c1b9",
    "type": "WOODEN_BENCH",
    "col": 15,
    "row": 10,
@@ -2842,7 +2885,7 @@
    }
   },
   {
-   "uid": "f-00b640c498",
+   "uid": "f-62eded2131",
    "type": "SMALL_TABLE_FRONT",
    "col": 17,
    "row": 10,
@@ -2854,13 +2897,13 @@
    }
   },
   {
-   "uid": "f-ccabd1cab3",
+   "uid": "f-ade74befcf",
    "type": "COFFEE",
    "col": 17,
    "row": 11
   },
   {
-   "uid": "f-2c6708ce0c",
+   "uid": "f-a4fbf85d25",
    "type": "CUSHIONED_CHAIR_BACK",
    "col": 17,
    "row": 12,
@@ -2873,7 +2916,7 @@
    }
   },
   {
-   "uid": "f-f5e2566129",
+   "uid": "f-f98fbf4243",
    "type": "CUSHIONED_CHAIR_BACK",
    "col": 18,
    "row": 12,
@@ -2886,7 +2929,7 @@
    }
   },
   {
-   "uid": "f-70a46bcb6d",
+   "uid": "f-430ceacbdc",
    "type": "SOFA_SIDE",
    "col": 14,
    "row": 12,
@@ -2899,7 +2942,7 @@
    }
   },
   {
-   "uid": "f-95478880ec",
+   "uid": "f-a5b5368a0f",
    "type": "COFFEE_TABLE",
    "col": 15,
    "row": 12,
@@ -2911,13 +2954,13 @@
    }
   },
   {
-   "uid": "f-cfca643b5d",
+   "uid": "f-b727c272a0",
    "type": "COFFEE",
    "col": 15,
    "row": 12
   },
   {
-   "uid": "f-054969c4b2",
+   "uid": "f-9b6514e1ed",
    "type": "PLANT_2",
    "col": 18,
    "row": 8
@@ -3722,60 +3765,6 @@
   null,
   null,
   null,
-  {
-   "variant": 2,
-   "order": 5,
-   "color": {
-    "h": 40,
-    "s": 22,
-    "b": 0,
-    "c": -25,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 42,
-    "s": 55,
-    "b": 12,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 5,
-   "color": {
-    "h": 40,
-    "s": 22,
-    "b": 0,
-    "c": -25,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 42,
-    "s": 55,
-    "b": 12,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 5,
-   "color": {
-    "h": 40,
-    "s": 22,
-    "b": 0,
-    "c": -25,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 42,
-    "s": 55,
-    "b": 12,
-    "c": 0,
-    "colorize": true
-   }
-  },
   null,
   null,
   null,
@@ -3793,60 +3782,6 @@
   null,
   null,
   null,
-  {
-   "variant": 2,
-   "order": 5,
-   "color": {
-    "h": 40,
-    "s": 22,
-    "b": 0,
-    "c": -25,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 42,
-    "s": 55,
-    "b": 12,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 5,
-   "color": {
-    "h": 40,
-    "s": 22,
-    "b": 0,
-    "c": -25,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 42,
-    "s": 55,
-    "b": 12,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 5,
-   "color": {
-    "h": 40,
-    "s": 22,
-    "b": 0,
-    "c": -25,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 42,
-    "s": 55,
-    "b": 12,
-    "c": 0,
-    "colorize": true
-   }
-  },
   null,
   null,
   null,
@@ -3924,24 +3859,13 @@
   null,
   null,
   null,
-  {
-   "variant": 1,
-   "order": 4,
-   "color": {
-    "h": 40,
-    "s": 22,
-    "b": 0,
-    "c": -25,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 42,
-    "s": 55,
-    "b": 12,
-    "c": 0,
-    "colorize": true
-   }
-  },
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
   {
    "variant": 1,
    "order": 4,

@@ -70,23 +70,23 @@ FURNITURE = [
   ('CUSHIONED_CHAIR_FRONT', 10, 1, GOLD_SEAT),
   ('DESK_FRONT', 9, 2, WOOD_DARK), ('PC_BACK', 10, 2), ('COFFEE', 11, 3),
   ('CUSHIONED_CHAIR_BACK', 9, 4, COGNAC), ('CUSHIONED_CHAIR_BACK', 11, 4, COGNAC),
-  ('LARGE_PLANT', 7, 3), ('PLANT_2', 12, 4),
+  ('COFFEE_TABLE', 7, 2, WOOD_DARK), ('COFFEE', 8, 3), ('SOFA_BACK', 7, 4, COGNAC), ('PLANT_2', 12, 4),
   # ===== ПРАВЫЙ КАБИНЕТ (переговорная, cols 14-18) — полный редизайн: стол на шесть мест
-  ('WHITEBOARD', 14, -1), ('CLOCK', 18, -1),
+  ('WHITEBOARD', 14, -1), ('LARGE_PAINTING', 17, -1),
   ('SMALL_TABLE_FRONT', 16, 2, WOOD_DARK),
   ('CUSHIONED_CHAIR_FRONT', 16, 1, LEATHER),
   ('CUSHIONED_CHAIR_SIDE', 15, 3, LEATHER), ('CUSHIONED_CHAIR_SIDE:left', 18, 3, LEATHER),
   ('CUSHIONED_CHAIR_BACK', 16, 4, LEATHER), ('CUSHIONED_CHAIR_BACK', 17, 4, LEATHER),
-  ('PLANT', 14, 4),
+  ('PLANT', 14, 4), ('CACTUS', 14, 1),
   # ===== ВХОДНАЯ ЗОНА (cols 8-13) — диван со столиком слева, ресепшн справа, проход по колонке 10
   ('SMALL_PAINTING_2', 13, 6),
-  ('COFFEE_TABLE', 8, 10, WOOD_DARK), ('COFFEE', 9, 10),
+  ('SMALL_TABLE_FRONT', 8, 9, WOOD_DARK), ('COFFEE', 9, 10),
   ('SOFA_FRONT', 8, 12, COGNAC),
-  ('PLANT_2', 13, 8),
+  ('PLANT_2', 13, 8), ('LARGE_PAINTING', 11, 6),
   ('CUSHIONED_CHAIR_FRONT', 12, 10, LEATHER),
   ('DESK_FRONT', 11, 11, WOOD_DARK), ('PC_BACK', 12, 11),
   # ===== ОПЕНСПЕЙС (cols 1-7) — восемь рабочих мест, концепция сохранена
-  ('CLOCK', 1, 6), ('WHITEBOARD', 4, 6),
+  ('CLOCK', 1, 6), ('WHITEBOARD', 4, 6), ('HANGING_PLANT', 6, 6),
   ('DESK_FRONT', 1, 8), ('PC_FRONT_OFF', 1, 8), ('PC_FRONT_OFF', 3, 8),
   ('CUSHIONED_CHAIR_BACK', 1, 10, STAFF_SEAT), ('CUSHIONED_CHAIR_BACK', 3, 10, STAFF_SEAT),
   ('DESK_FRONT', 5, 8), ('PC_FRONT_OFF', 5, 8), ('PC_FRONT_OFF', 7, 8),
@@ -114,8 +114,7 @@ CARPETS = [
   {'variant': 0, 'col': 9, 'row': 1, 'w': 3, 'h': 4, 'color': RUG_VIOLET, 'accent': RUG_GOLD},   # CEO
   {'variant': 2, 'col': 2, 'row': 1, 'w': 3, 'h': 3, 'color': RUG_NAVY, 'accent': RUG_GOLD},     # CTO
   {'variant': 0, 'col': 15, 'row': 1, 'w': 4, 'h': 4, 'color': RUG_NAVY, 'accent': RUG_GOLD},    # переговорная
-  {'variant': 1, 'col': 9, 'row': 13, 'w': 3, 'h': 1, 'color': RUG_CREAM, 'accent': RUG_GOLD},   # коврик у входа
-  {'variant': 2, 'col': 9, 'row': 8, 'w': 3, 'h': 2, 'color': RUG_CREAM, 'accent': RUG_GOLD},   # площадка перед кабинетом
+  {'variant': 1, 'col': 10, 'row': 13, 'w': 2, 'h': 1, 'color': RUG_CREAM, 'accent': RUG_GOLD},   # коврик у входа
 ]
 
 PETS = [0, 1]
