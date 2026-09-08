@@ -1,37 +1,36 @@
-# OFFICE v3 — база: большой дизайн 35x25, ужатый по указу владельца. 24 x 19 = 456 тайлов (52% от большого).
+# OFFICE v4 — 24 x 19 = 456. База: большой офис, порезанный по указам владельца.
 #
-# Что сделано с большим офисом:
-#   * горизонтальный холл во всю ширину (4 ряда) вырезан полностью;
-#   * правая часть урезана: переговорная 8->6 колонок, кафе 11->6, оба правых компьютера убраны;
-#   * центральный кабинет CEO 15->6 колонок;
-#   * левая часть сохранена: кабинет CTO как был, рабочая комната с ВОСЕМЬЮ компьютерами как была;
-#   * вместо холла — компактная входная зона по центру: диван слева, ресепшн справа, проход между ними,
-#     двери налево в рабочую зону и направо в кафе; наверх — в кабинет CEO.
-#   * верхняя полоса оставлена высокой (8 видимых рядов), как в большом офисе.
+# Правки этого захода:
+#   * диван у входа стоит ВЕРТИКАЛЬНО;
+#   * стол администратора там, куда владелец его сам поставил — (10,11), в одном шаге от прохода;
+#   * рабочая комната: 8 компьютеров -> 6 (убраны правый верхний и правый нижний);
+#   * входная зона ужата с 6 колонок до 4;
+#   * кухня расширена с 6 до 8 колонок и собрана как в большом офисе: барная стойка с полками и табуретами,
+#     сетка столиков, диван-уголок, растения;
+#   * верхняя полоса переработана от большого офиса: CTO как был, кабинет CEO с лаунж-группой, переговорная.
 #
-# rows: 0 стена | 1-9 верхняя полоса (ряд 9 скрыт) | 10 стена с дверями
-#       | 11-17 нижняя полоса (ряд 17 скрыт) | 18 стена + вход с улицы
-# cols: CTO 1-8 | стена 9 | CEO 10-15 | стена 16 | переговорная 17-22
-#       снизу: рабочая 1-8 | стена 9 | вход 10-15 | стена 16 | кафе 17-22
+# rows: 0 стена | 1-9 верх (ряд 9 скрыт) | 10 стена с дверями | 11-17 низ (ряд 17 скрыт) | 18 стена + вход
+# cols верх:  CTO 1-8 | стена 9 | CEO 10-16 | стена 17 | переговорная 18-22
+# cols низ:   рабочая 1-8 | стена 9 | вход 10-13 | стена 14 | кухня 15-22
 MAP = """
 ########################
-#cccccccc#EEEEEE#mmmmmm#
-#cccccccc#EEEEEE#mmmmmm#
-#cccccccc#EEEEEE#mmmmmm#
-#cccccccc#EEEEEE#mmmmmm#
-#cccccccc#EEEEEE#mmmmmm#
-#cccccccc#EEEEEE#mmmmmm#
-#cccccccc#EEEEEE#mmmmmm#
-#cccccccc#EEEEEE#mmmmmm#
-#cccccccc#EEEEEE#mmmmmm#
-###cc#######EE#####mm###
-#ssssssss#LLLLLL#bbbbbb#
-#ssssssssLLLLLLL#bbbbbb#
-#ssssssssLLLLLLLbbbbbbb#
-#ssssssss#LLLLLLbbbbbbb#
-#ssssssss#LLLLLL#bbbbbb#
-#ssssssss#LLLLLL#bbbbbb#
-#ssssssss#LLLLLL#bbbbbb#
+#cccccccc#EEEEEEE#mmmmm#
+#cccccccc#EEEEEEE#mmmmm#
+#cccccccc#EEEEEEE#mmmmm#
+#cccccccc#EEEEEEE#mmmmm#
+#cccccccc#EEEEEEE#mmmmm#
+#cccccccc#EEEEEEE#mmmmm#
+#cccccccc#EEEEEEE#mmmmm#
+#cccccccc#EEEEEEE#mmmmm#
+#cccccccc#EEEEEEE#mmmmm#
+###cc######EE######mm###
+#ssssssss#LLLL#bbbbbbbb#
+#ssssssss#LLLL#bbbbbbbb#
+#ssssssssLLLLLbbbbbbbbb#
+#ssssssssLLLLLbbbbbbbbb#
+#ssssssss#LLLL#bbbbbbbb#
+#ssssssss#LLLL#bbbbbbbb#
+#ssssssss#LLLL#bbbbbbbb#
 ############LL##########
 """
 
@@ -39,7 +38,7 @@ ESPRESSO = {'h': 24, 's': 22, 'b': -52, 'c': -80}   # CEO
 WALNUT_F = {'h': 27, 's': 18, 'b': -38, 'c': -84}   # CTO / переговорная
 MARBLE   = {'h': 38, 's': 10, 'b': -4,  'c': -80}   # входная зона
 STONE    = {'h': 212, 's': 10, 'b': -24, 'c': -85}  # рабочая комната
-CHECKER  = {'h': 34, 's': 20, 'b': -10, 'c': -60}   # кафе
+CHECKER  = {'h': 34, 's': 20, 'b': -10, 'c': -60}   # кухня
 
 LEGEND = {
   'E': {'tile': 4, 'color': ESPRESSO},
@@ -66,53 +65,54 @@ STAFF_SEAT = {'h': 222, 's': 16, 'b': -14, 'c': 0, 'colorize': True}
 CAFE_SEAT  = {'h': 20, 's': 40, 'b': -20, 'c': 8, 'colorize': True}
 
 FURNITURE = [
-  # ===== ЛЕВЫЙ КАБИНЕТ (CTO, cols 1-8, rows 1-8) — как в большом офисе, только растения приведены в порядок
+  # ===== ЛЕВЫЙ КАБИНЕТ (CTO, cols 1-8) — как в большом офисе
   ('DOUBLE_BOOKSHELF', 1, -1), ('WHITEBOARD', 4, -1), ('CLOCK', 7, -1),
   ('CUSHIONED_CHAIR_FRONT', 4, 2, LEATHER),
   ('DESK_FRONT', 3, 3, WOOD_DARK), ('PC_BACK', 4, 3),
   ('CUSHIONED_CHAIR_BACK', 4, 5, VELVET_GRN),
   ('CUSHIONED_CHAIR_SIDE', 1, 7, VELVET_GRN), ('COFFEE_TABLE', 2, 7, WOOD_DARK), ('COFFEE', 3, 7),
   ('LARGE_PLANT', 7, 6), ('PLANT_2', 1, 1),
-  # ===== ЦЕНТРАЛЬНЫЙ КАБИНЕТ (CEO, cols 10-15) — с 15 колонок до 6, но полноценный
-  ('DOUBLE_BOOKSHELF', 10, -1), ('CLOCK', 12, -1), ('LARGE_PAINTING', 14, -1),
-  ('CUSHIONED_CHAIR_FRONT', 12, 2, GOLD_SEAT),
-  ('DESK_FRONT', 11, 3, WOOD_DARK), ('PC_BACK', 12, 3), ('COFFEE', 13, 4),
-  ('CUSHIONED_CHAIR_BACK', 11, 5, COGNAC), ('CUSHIONED_CHAIR_BACK', 13, 5, COGNAC),
-  ('SOFA_SIDE', 10, 7, COGNAC), ('COFFEE_TABLE', 11, 7, WOOD_DARK), ('COFFEE', 12, 7),
-  ('LARGE_PLANT', 14, 6),
-  # ===== ПРАВЫЙ КАБИНЕТ (переговорная, cols 17-22) — полный редизайн, компьютеров нет
-  ('WHITEBOARD', 17, -1), ('DOUBLE_BOOKSHELF', 19, -1), ('LARGE_PAINTING', 21, -1),
-  ('CUSHIONED_CHAIR_FRONT', 19, 2, LEATHER),
-  ('TABLE_FRONT', 18, 3, WOOD_DARK),
-  ('CUSHIONED_CHAIR_SIDE', 17, 4, LEATHER), ('CUSHIONED_CHAIR_SIDE', 17, 6, LEATHER),
-  ('CUSHIONED_CHAIR_SIDE:left', 21, 4, LEATHER), ('CUSHIONED_CHAIR_SIDE:left', 21, 6, LEATHER),
-  ('CUSHIONED_CHAIR_BACK', 19, 7, LEATHER),
-  ('PLANT_2', 17, 7), ('PLANT', 22, 7),
-  # ===== РАБОЧАЯ КОМНАТА (cols 1-8) — восемь компьютеров, как было
+  # ===== КАБИНЕТ CEO (cols 10-16) — стол по центру, гости, лаунж-группа слева, зелень справа
+  ('DOUBLE_BOOKSHELF', 10, -1), ('LARGE_PAINTING', 12, -1), ('CLOCK', 15, -1),
+  ('CUSHIONED_CHAIR_FRONT', 13, 2, GOLD_SEAT),
+  ('DESK_FRONT', 12, 3, WOOD_DARK), ('PC_BACK', 13, 3), ('COFFEE', 14, 4),
+  ('CUSHIONED_CHAIR_BACK', 12, 5, COGNAC), ('CUSHIONED_CHAIR_BACK', 14, 5, COGNAC),
+  ('SOFA_SIDE', 10, 6, COGNAC), ('COFFEE_TABLE', 11, 6, WOOD_DARK), ('COFFEE', 12, 7),
+  ('LARGE_PLANT', 15, 6), ('PLANT_2', 16, 1),
+  # ===== ПЕРЕГОВОРНАЯ (cols 18-22) — стол на шесть мест, доска, картина, ковёр
+  ('WHITEBOARD', 18, -1), ('LARGE_PAINTING', 21, -1),
+  ('CUSHIONED_CHAIR_FRONT', 20, 2, LEATHER),
+  ('TABLE_FRONT', 19, 3, WOOD_DARK),
+  ('CUSHIONED_CHAIR_SIDE', 18, 4, LEATHER), ('CUSHIONED_CHAIR_SIDE', 18, 6, LEATHER),
+  ('CUSHIONED_CHAIR_SIDE:left', 22, 4, LEATHER), ('CUSHIONED_CHAIR_SIDE:left', 22, 6, LEATHER),
+  ('CUSHIONED_CHAIR_BACK', 20, 7, LEATHER),
+  ('PLANT_2', 18, 7),
+  # ===== РАБОЧАЯ КОМНАТА (cols 1-8) — ШЕСТЬ компьютеров: правый верхний и правый нижний убраны
   ('WHITEBOARD', 1, 9), ('HANGING_PLANT', 5, 9), ('CLOCK', 8, 9),
   ('DESK_FRONT', 1, 11), ('PC_FRONT_OFF', 1, 11), ('PC_FRONT_OFF', 3, 11),
   ('CUSHIONED_CHAIR_BACK', 1, 13, STAFF_SEAT), ('CUSHIONED_CHAIR_BACK', 3, 13, STAFF_SEAT),
-  ('DESK_FRONT', 5, 11), ('PC_FRONT_OFF', 5, 11), ('PC_FRONT_OFF', 7, 11),
-  ('CUSHIONED_CHAIR_BACK', 5, 13, STAFF_SEAT), ('CUSHIONED_CHAIR_BACK', 7, 13, STAFF_SEAT),
+  ('DESK_FRONT', 5, 11), ('PC_FRONT_OFF', 6, 11),
+  ('CUSHIONED_CHAIR_BACK', 6, 13, STAFF_SEAT),
   ('DESK_FRONT', 1, 14), ('PC_FRONT_OFF', 1, 14), ('PC_FRONT_OFF', 3, 14),
   ('CUSHIONED_CHAIR_BACK', 1, 16, STAFF_SEAT), ('CUSHIONED_CHAIR_BACK', 3, 16, STAFF_SEAT),
-  ('DESK_FRONT', 5, 14), ('PC_FRONT_OFF', 5, 14), ('PC_FRONT_OFF', 7, 14),
-  ('CUSHIONED_CHAIR_BACK', 5, 16, STAFF_SEAT), ('CUSHIONED_CHAIR_BACK', 7, 16, STAFF_SEAT),
-  ('BIN', 8, 16),
-  # ===== ВХОДНАЯ ЗОНА (cols 10-15) — диван слева со столиком за ним, ресепшн справа, проход по колонке 12
-  ('LARGE_PAINTING', 10, 9), ('SMALL_PAINTING_2', 15, 9), ('PLANT_2', 15, 11),
-  ('SMALL_TABLE_FRONT', 10, 13, WOOD_DARK), ('COFFEE', 11, 14),
-  ('SOFA_FRONT', 10, 15, COGNAC),
-  ('CUSHIONED_CHAIR_FRONT', 14, 13, LEATHER),
-  ('DESK_FRONT', 13, 14, WOOD_DARK), ('PC_BACK', 14, 14),
-  # ===== КАФЕ (cols 17-22) — стойка, столик и диван-уголок
-  ('BOOKSHELF', 17, 10), ('HANGING_PLANT', 22, 9),
-  ('DESK_FRONT', 17, 11, WOOD_DARK), ('COFFEE', 17, 12), ('COFFEE', 19, 12),
-  ('WOODEN_BENCH', 17, 13, CAFE_SEAT), ('WOODEN_BENCH', 18, 13, CAFE_SEAT),
-  ('SMALL_TABLE_FRONT', 21, 11, WOOD_DARK), ('COFFEE', 21, 12),
-  ('CUSHIONED_CHAIR_BACK', 21, 13, CAFE_SEAT), ('CUSHIONED_CHAIR_BACK', 22, 13, CAFE_SEAT),
-  ('SOFA_SIDE', 17, 15, CAFE_SEAT), ('COFFEE_TABLE', 18, 15, WOOD_DARK), ('COFFEE', 18, 15),
-  ('PLANT_2', 22, 15),
+  ('DESK_FRONT', 5, 14), ('PC_FRONT_OFF', 6, 14),
+  ('CUSHIONED_CHAIR_BACK', 6, 16, STAFF_SEAT),
+  ('PLANT_2', 7, 15), ('BIN', 8, 16),
+  # ===== ВХОДНАЯ ЗОНА (cols 10-13) — ужата вдвое; стол администратора там, где его поставил владелец
+  ('SMALL_PAINTING', 10, 9), ('SMALL_PAINTING_2', 13, 9),
+  ('DESK_FRONT', 10, 11, WOOD_DARK), ('PC_BACK', 11, 11), ('CUSHIONED_CHAIR_FRONT', 11, 11, LEATHER),
+  ('SOFA_SIDE', 10, 14, COGNAC),                                  # диван стоит вертикально
+  ('COFFEE_TABLE', 11, 14, WOOD_DARK), ('COFFEE', 12, 14),
+  # ===== КУХНЯ (cols 15-22) — расширена, собрана как буфет большого офиса
+  ('BOOKSHELF', 15, 10), ('BOOKSHELF', 17, 10), ('LARGE_PAINTING', 21, 9),
+  ('DESK_FRONT', 15, 11, WOOD_DARK), ('COFFEE', 15, 12), ('COFFEE', 17, 12),
+  ('WOODEN_BENCH', 15, 13, CAFE_SEAT), ('WOODEN_BENCH', 16, 13, CAFE_SEAT), ('WOODEN_BENCH', 17, 13, CAFE_SEAT),
+  ('SMALL_TABLE_FRONT', 19, 11, WOOD_DARK), ('COFFEE', 19, 12),
+  ('CUSHIONED_CHAIR_BACK', 19, 13, CAFE_SEAT), ('CUSHIONED_CHAIR_BACK', 20, 13, CAFE_SEAT),
+  ('SMALL_TABLE_FRONT', 19, 14, WOOD_DARK), ('COFFEE', 20, 15),
+  ('CUSHIONED_CHAIR_BACK', 19, 16, CAFE_SEAT), ('CUSHIONED_CHAIR_BACK', 20, 16, CAFE_SEAT),
+  ('SOFA_SIDE', 15, 15, CAFE_SEAT), ('COFFEE_TABLE', 16, 15, WOOD_DARK), ('COFFEE', 16, 15),
+  ('PLANT_2', 22, 11), ('PLANT', 22, 14), ('POT', 22, 16),
 ]
 
 RUG_VIOLET = {'h': 265, 's': 36, 'b': -36, 'c': -22}
@@ -121,9 +121,9 @@ RUG_NAVY   = {'h': 228, 's': 28, 'b': -42, 'c': -20}
 RUG_CREAM  = {'h': 40, 's': 22, 'b': 0, 'c': -25}
 
 CARPETS = [
-  {'variant': 0, 'col': 11, 'row': 2, 'w': 3, 'h': 4, 'color': RUG_VIOLET, 'accent': RUG_GOLD},   # CEO
+  {'variant': 0, 'col': 12, 'row': 2, 'w': 3, 'h': 4, 'color': RUG_VIOLET, 'accent': RUG_GOLD},   # CEO
   {'variant': 2, 'col': 2, 'row': 2, 'w': 5, 'h': 4, 'color': RUG_NAVY, 'accent': RUG_GOLD},      # CTO
-  {'variant': 0, 'col': 18, 'row': 3, 'w': 3, 'h': 5, 'color': RUG_NAVY, 'accent': RUG_GOLD},     # переговорная
+  {'variant': 0, 'col': 19, 'row': 3, 'w': 3, 'h': 5, 'color': RUG_NAVY, 'accent': RUG_GOLD},     # переговорная
   {'variant': 1, 'col': 12, 'row': 16, 'w': 2, 'h': 1, 'color': RUG_CREAM, 'accent': RUG_GOLD},   # коврик у входа
 ]
 
