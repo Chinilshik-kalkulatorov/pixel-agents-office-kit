@@ -53,30 +53,29 @@ FURNITURE = [
   ('DOUBLE_BOOKSHELF', 1, -1), ('LARGE_PAINTING', 4, -1),
   ('CUSHIONED_CHAIR_FRONT', 3, 1, GOLD_SEAT),
   ('DESK_FRONT', 2, 2, WOOD_DARK), ('PC_BACK', 3, 2), ('COFFEE', 4, 3),
-  ('CUSHIONED_CHAIR_SIDE', 1, 3, COGNAC),
-  ('SOFA_FRONT', 6, 1, LEATHER), ('COFFEE_TABLE', 6, 2, WOOD_DARK), ('COFFEE', 7, 2),
-  ('CUSHIONED_CHAIR_SIDE', 5, 2, GOLD_SEAT),
-  ('PLANT', 1, 1),
+  ('CUSHIONED_CHAIR_SIDE', 1, 2, COGNAC),
+  ('SOFA_FRONT', 6, 1, COGNAC), ('COFFEE_TABLE', 6, 2, WOOD_DARK), ('COFFEE', 7, 3),
+  ('CUSHIONED_CHAIR_SIDE', 5, 3, GOLD_SEAT),
   # ---- CTO (cols 9-13, rows 1-3): smaller, navy, green velvet visitor chair
   ('WHITEBOARD', 9, -1), ('CLOCK', 13, -1),
   ('CUSHIONED_CHAIR_FRONT', 11, 1, LEATHER),
   ('DESK_FRONT', 10, 2, WOOD_DARK), ('PC_BACK', 11, 2),
-  ('CUSHIONED_CHAIR_SIDE:left', 13, 3, VELVET_GRN),
-  ('PLANT_2', 9, 1), ('BIN', 13, 1),
+  ('CUSHIONED_CHAIR_SIDE:left', 13, 2, VELVET_GRN),
+  ('PLANT_2', 9, 1),
   # ---- Corridor (row 6): runner, art on the row-5 wall, a tall plant at each end
-  ('BOOKSHELF', 2, 5), ('LARGE_PAINTING', 7, 4), ('BOOKSHELF', 12, 5),
-  ('LARGE_PLANT', 1, 4), ('LARGE_PLANT', 12, 4), ('CUSHIONED_BENCH', 9, 6, COGNAC),
+  ('BOOKSHELF', 2, 5), ('LARGE_PAINTING', 7, 4),
+  ('LARGE_PLANT', 12, 4), ('CUSHIONED_BENCH', 8, 6, COGNAC),
   # ---- Staff floor (cols 1-10, rows 7-9): two bench desks, three seats each
   ('DESK_FRONT', 1, 7), ('PC_FRONT_OFF', 1, 7), ('PC_FRONT_OFF', 2, 7), ('PC_FRONT_OFF', 3, 7),
   ('CUSHIONED_CHAIR_BACK', 1, 9, STAFF_SEAT), ('CUSHIONED_CHAIR_BACK', 2, 9, STAFF_SEAT),
   ('CUSHIONED_CHAIR_BACK', 3, 9, STAFF_SEAT),
-  ('DESK_FRONT', 5, 7), ('PC_FRONT_OFF', 5, 7), ('PC_FRONT_OFF', 6, 7), ('PC_FRONT_OFF', 7, 7),
-  ('CUSHIONED_CHAIR_BACK', 5, 9, STAFF_SEAT), ('CUSHIONED_CHAIR_BACK', 6, 9, STAFF_SEAT),
-  ('CUSHIONED_CHAIR_BACK', 7, 9, STAFF_SEAT),
-  ('PLANT', 9, 7), ('BIN', 4, 9), ('BIN', 8, 9),
+  ('DESK_FRONT', 6, 7), ('PC_FRONT_OFF', 6, 7), ('PC_FRONT_OFF', 7, 7), ('PC_FRONT_OFF', 8, 7),
+  ('CUSHIONED_CHAIR_BACK', 6, 9, STAFF_SEAT), ('CUSHIONED_CHAIR_BACK', 7, 9, STAFF_SEAT),
+  ('CUSHIONED_CHAIR_BACK', 8, 9, STAFF_SEAT),
+  ('PLANT', 10, 7), ('BIN', 4, 9),
   # ---- Cafe (cols 11-13, rows 7-9): counter with mugs, three stools
-  ('DESK_FRONT', 11, 7, WOOD_DARK), ('COFFEE', 12, 7), ('COFFEE', 13, 7),
-  ('WOODEN_BENCH', 11, 9, CAFE_SEAT), ('WOODEN_BENCH', 12, 9, CAFE_SEAT), ('WOODEN_BENCH', 13, 9, CAFE_SEAT),
+  ('DESK_FRONT', 11, 7, WOOD_DARK), ('COFFEE', 12, 8), ('COFFEE', 13, 8),
+  ('WOODEN_BENCH', 11, 9, CAFE_SEAT), ('WOODEN_BENCH', 12, 9, CAFE_SEAT), ('POT', 13, 9),
 ]
 
 RUG_VIOLET = {'h': 265, 's': 36, 'b': -36, 'c': -22}
@@ -88,7 +87,7 @@ RUG_RUNNER = {'h': 265, 's': 24, 'b': -40, 'c': -22}
 CARPETS = [
   {'variant': 0, 'col': 2, 'row': 1, 'w': 3, 'h': 3, 'color': RUG_CREAM, 'accent': RUG_VIOLET},  # CEO desk
   {'variant': 2, 'col': 10, 'row': 1, 'w': 3, 'h': 3, 'color': RUG_NAVY, 'accent': RUG_GOLD},    # CTO
-  {'variant': 1, 'col': 3, 'row': 6, 'w': 9, 'h': 1, 'color': RUG_RUNNER, 'accent': RUG_GOLD},   # corridor runner
+  {'variant': 1, 'col': 6, 'row': 6, 'w': 4, 'h': 1, 'color': RUG_RUNNER, 'accent': RUG_GOLD},   # corridor mat between the doors
 ]
 
 PETS = [0, 1]
