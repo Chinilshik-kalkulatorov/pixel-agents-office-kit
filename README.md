@@ -4,7 +4,9 @@
 (VS Code): пишешь планировку текстом — получаешь `layout.json`, картинку офиса 1:1 с движком и проверку на ошибки.
 Никакого редактора мышкой, никакого VS Code для правок: всё оффлайн, только Python и Pillow.
 
-![Офис](layouts/big/office.png)
+![Компактный офис](layouts/compact/office.png)
+
+Шесть зон, 15×12 тайлов: кабинет CEO, кабинет CTO, коридор с дорожкой, опенспейс, кафе. Есть версия побольше на 35×25.
 
 ## Быстрый старт
 
@@ -13,7 +15,7 @@ git clone https://github.com/Chinilshik-kalkulatorov/pixel-agents-office-kit
 cd pixel-agents-office-kit
 pip install pillow
 
-python3 office_kit.py all layouts/big/spec.py out    # собрать + проверить + отрисовать
+python3 office_kit.py all layouts/compact/spec.py out # собрать + проверить + отрисовать
 python3 apply_layout.py out.json                     # применить (бэкап делается сам)
 ```
 
@@ -75,9 +77,14 @@ PETS = [0, 1]                                              # Claudio и Gitcat �
 
 ## Планировки
 
-| | |
-|---|---|
-| [layouts/big](layouts/big) | 35×25, шесть зон: CTO, кабинет CEO, переговорная, лобби с дорожкой и входом, опенспейс, ресепшн, кафе |
+| Планировка | Размер | Что внутри |
+|---|---|---|
+| [layouts/compact](layouts/compact) | 15×12 = 180 тайлов | **рекомендуемая.** CEO, CTO, коридор с дорожкой и картинами, опенспейс на 6 мест, кафе. 17 мест, 10 лицом к монитору |
+| [layouts/tiny](layouts/tiny) | 15×10 = 150 тайлов | самая маленькая: те же четыре комнаты, максимально плотно |
+| [layouts/big](layouts/big) | 35×25 = 875 тайлов | парадная: CTO, кабинет CEO, переговорная, лобби с входом с улицы, опенспейс, ресепшн, кафе |
+
+Компактная в 4.9 раза меньше парадной по площади и помещается в панель VS Code без зума.
+Как их сравнивали: [docs/compact_candidates.png](docs/compact_candidates.png), правила сжатия — [docs/BRIEF_COMPACT.md](docs/BRIEF_COMPACT.md).
 
 Как это делалось: шесть агентов-дизайнеров, три жюри, три аудитора — брифы и списки правок лежат в
 [docs/SYNTH.md](docs/SYNTH.md) и [docs/BRIEF_COMPACT.md](docs/BRIEF_COMPACT.md), если захотите повторить с другими агентами.
