@@ -13,7 +13,7 @@
 # cols верх: CTO 1-8 | стена 9 | CEO 10-20 | стена 21 | переговорная 22-27 | стена 28
 # cols низ:  рабочая 1-11 | стена 12 | ресепшн 13-15 | стена 16 | кухня 17-27 | стена 28
 # двери: CTO→рабочая 7-8 · CEO→ресепшн 14-15 (выход администратора) · CEO↔переговорная (21, 2-3) · переговорная→кухня 22-23 · ресепшн↔рабочая (12, 14-15) ·
-#        ресепшн↔кухня (16, 14-15) — вровень с левой · с улицы 14-15
+#        ресепшн↔кухня (16, 16-17) · с улицы 14-15
 MAP = """
 #############################
 #cccccccc#EEEEEEEEEEE#mmmmmm#
@@ -29,10 +29,10 @@ MAP = """
 #sssssssssss#LLL#bbbbbbbbbbb#
 #sssssssssss#LLL#bbbbbbbbbbb#
 #sssssssssss#LLL#bbbbbbbbbbb#
-#ssssssssssssLLLbbbbbbbbbbbb#
-#sssssssssssLLLLbbbbbbbbbbbb#
-#sssssssssss#LLL#bbbbbbbbbbb#
-#sssssssssss#LLL#bbbbbbbbbbb#
+#ssssssssssssLLL#bbbbbbbbbbb#
+#sssssssssssLLLL#bbbbbbbbbbb#
+#sssssssssss#LLLbbbbbbbbbbbb#
+#sssssssssss#LLLbbbbbbbbbbbb#
 #sssssssssss#LLL#bbbbbbbbbbb#
 ##############LL#############
 """
@@ -127,8 +127,8 @@ FURNITURE = [
   ('CUSHIONED_CHAIR_BACK', 20, 17, CAFE_SEAT), ('CUSHIONED_CHAIR_BACK', 21, 17, CAFE_SEAT),
   ('SMALL_TABLE_FRONT', 24, 15, WOOD_DARK), ('COFFEE', 25, 16),
   ('CUSHIONED_CHAIR_BACK', 24, 17, CAFE_SEAT), ('CUSHIONED_CHAIR_BACK', 25, 17, CAFE_SEAT),
-  ('SOFA_SIDE', 17, 16, CAFE_SEAT), ('COFFEE_TABLE', 18, 16, WOOD_DARK), ('COFFEE', 19, 16),
-  ('PLANT_2', 27, 11), ('LARGE_PLANT', 26, 15), ('BIN', 22, 17),
+  ('SOFA_SIDE', 17, 15, CAFE_SEAT), ('COFFEE_TABLE', 18, 15, WOOD_DARK), ('COFFEE', 19, 15),
+  ('PLANT_2', 27, 11), ('LARGE_PLANT', 26, 15), ('BIN', 19, 17),
 ]
 
 RUG_VIOLET = {'h': 265, 's': 36, 'b': -36, 'c': -22}

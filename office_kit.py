@@ -55,7 +55,8 @@ def build(spec):
             if ch == '#':
                 tiles.append(0)
                 wc = wall_color
-                for dr, dc in ((1, 0), (0, 1), (0, -1), (-1, 0)):
+                # wall colour: room below, then right/left, then diagonally below (junction caps), then above
+                for dr, dc in ((1, 0), (0, 1), (0, -1), (1, 1), (1, -1), (-1, 0)):
                     rr, cc = r + dr, c + dc
                     if 0 <= rr < rows and 0 <= cc < cols and lines[rr][cc] in wall_colors:
                         wc = wall_colors[lines[rr][cc]]; break
@@ -66,6 +67,10 @@ def build(spec):
                 if ch not in legend: raise SystemExit(f'MAP char {ch!r} at ({c},{r}) not in LEGEND')
                 room = legend[ch]
                 tiles.append(int(room['tile'])); tcol.append(dict(room['color']))
+    # optional per-tile wall colour overrides: WALL_TILE_COLORS = {(col, row): color}
+    for (oc, orow), col in (getattr(spec, 'WALL_TILE_COLORS', {}) or {}).items():
+        if 0 <= orow < rows and 0 <= oc < cols and tiles[orow * cols + oc] == 0:
+            tcol[orow * cols + oc] = dict(col) if col else None
     furniture = []
     for i, f in enumerate(spec.FURNITURE):
         t, c, r = f[0], int(f[1]), int(f[2])
