@@ -4180,8 +4180,14 @@
    "row": 1
   },
   {
-   "uid": "f-c19ef26516",
-   "type": "WHITEBOARD",
+   "uid": "f-298b30af83",
+   "type": "DOUBLE_BOOKSHELF",
+   "col": 10,
+   "row": -1
+  },
+  {
+   "uid": "f-ba8daae7e1",
+   "type": "LARGE_PAINTING",
    "col": 12,
    "row": -1
   },
@@ -4198,6 +4204,37 @@
    "row": -1
   },
   {
+   "uid": "f-fece589842",
+   "type": "DOUBLE_BOOKSHELF",
+   "col": 19,
+   "row": -1
+  },
+  {
+   "uid": "f-bb23965020",
+   "type": "PLANT",
+   "col": 14,
+   "row": 0
+  },
+  {
+   "uid": "f-021000bd6f",
+   "type": "PLANT",
+   "col": 16,
+   "row": 0
+  },
+  {
+   "uid": "f-f2b59a1e1d",
+   "type": "CUSHIONED_CHAIR_FRONT",
+   "col": 15,
+   "row": 2,
+   "color": {
+    "h": 40,
+    "s": 38,
+    "b": -20,
+    "c": 12,
+    "colorize": true
+   }
+  },
+  {
    "uid": "f-013c346e78",
    "type": "TABLE_FRONT",
    "col": 14,
@@ -4210,73 +4247,267 @@
    }
   },
   {
-   "uid": "f-281eac6f94",
-   "type": "PC_SIDE",
-   "col": 14,
-   "row": 3
-  },
-  {
-   "uid": "f-04ec921bd7",
-   "type": "PC_SIDE:left",
-   "col": 16,
-   "row": 3
-  },
-  {
-   "uid": "f-9d793a3a1a",
-   "type": "CUSHIONED_CHAIR_SIDE",
-   "col": 13,
-   "row": 4,
-   "color": {
-    "h": 265,
-    "s": 10,
-    "b": -24,
-    "c": 20,
-    "colorize": true
-   }
-  },
-  {
-   "uid": "f-7752e7ef2f",
-   "type": "CUSHIONED_CHAIR_SIDE",
-   "col": 13,
-   "row": 6,
-   "color": {
-    "h": 265,
-    "s": 10,
-    "b": -24,
-    "c": 20,
-    "colorize": true
-   }
-  },
-  {
-   "uid": "f-726982f7f1",
-   "type": "CUSHIONED_CHAIR_SIDE:left",
-   "col": 17,
-   "row": 4,
-   "color": {
-    "h": 265,
-    "s": 10,
-    "b": -24,
-    "c": 20,
-    "colorize": true
-   }
-  },
-  {
-   "uid": "f-0dbab7583d",
-   "type": "CUSHIONED_CHAIR_SIDE:left",
-   "col": 17,
-   "row": 6,
-   "color": {
-    "h": 265,
-    "s": 10,
-    "b": -24,
-    "c": 20,
-    "colorize": true
-   }
-  },
-  {
-   "uid": "f-f2b59a1e1d",
-   "type": "CUSHIONED_CHAIR_FRONT",
+   "uid": "f-639cff31bc",
+   "type": "PC_BACK",
    "col": 15,
+   "row": 3
+  },
+  {
+   "uid": "f-a6d09e9703",
+   "type": "COFFEE",
+   "col": 16,
+   "row": 5
+  },
+  {
+   "uid": "f-e1849df38d",
+   "type": "CUSHIONED_CHAIR_BACK",
+   "col": 14,
+   "row": 7,
+   "color": {
+    "h": 25,
+    "s": 32,
+    "b": -22,
+    "c": 15,
+    "colorize": true
+   }
+  },
+  {
+   "uid": "f-9357698de4",
+   "type": "CUSHIONED_CHAIR_BACK",
+   "col": 16,
+   "row": 7,
+   "color": {
+    "h": 25,
+    "s": 32,
+    "b": -22,
+    "c": 15,
+    "colorize": true
+   }
+  },
+  {
+   "uid": "f-527abc5dc4",
+   "type": "SOFA_SIDE",
+   "col": 10,
+   "row": 4,
+   "color": {
+    "h": 25,
+    "s": 32,
+    "b": -22,
+    "c": 15,
+    "colorize": true
+   }
+  },
+  {
+   "uid": "f-8719dbd9c2",
+   "type": "COFFEE_TABLE",
+   "col": 11,
+   "row": 4,
+   "color": {
+    "h": 0,
+    "s": -10,
+    "b": -22,
+    "c": 12
+   }
+  },
+  {
+   "uid": "f-de3d64d8ac",
+   "type": "COFFEE",
+   "col": 12,
+   "row": 4
+  },
+  {
+   "uid": "f-5353e8ca76",
+   "type": "CUSHIONED_CHAIR_BACK",
+   "col": 11,
+   "row": 6,
+   "color": {
+    "h": 40,
+    "s": 38,
+    "b": -20,
+    "c": 12,
+    "colorize": true
+   }
+  },
+  {
+   "uid": "f-69e753f17e",
+   "type": "CUSHIONED_CHAIR_BACK",
+   "col": 12,
+   "row": 6,
+   "color": {
+    "h": 40,
+    "s": 38,
+    "b": -20,
+    "c": 12,
+    "colorize": true
+   }
+  },
+  {
+   "uid": "f-a16e20e5d3",
+   "type": "COFFEE_TABLE",
+   "col": 18,
+   "row": 4,
+   "color": {
+    "h": 0,
+    "s": -10,
+    "b": -22,
+    "c": 12
+   }
+  },
+  {
+   "uid": "f-f46c7c1e23",
+   "type": "COFFEE",
+   "col": 18,
+   "row": 4
+  },
+  {
+   "uid": "f-9cf72a9884",
+   "type": "SOFA_SIDE:left",
+   "col": 20,
+   "row": 4,
+   "color": {
+    "h": 25,
+    "s": 32,
+    "b": -22,
+    "c": 15,
+    "colorize": true
+   }
+  },
+  {
+   "uid": "f-9b9a3ef215",
+   "type": "CUSHIONED_CHAIR_BACK",
+   "col": 18,
+   "row": 6,
+   "color": {
+    "h": 40,
+    "s": 38,
+    "b": -20,
+    "c": 12,
+    "colorize": true
+   }
+  },
+  {
+   "uid": "f-ed5f3bcdc8",
+   "type": "CUSHIONED_CHAIR_BACK",
+   "col": 19,
+   "row": 6,
+   "color": {
+    "h": 40,
+    "s": 38,
+    "b": -20,
+    "c": 12,
+    "colorize": true
+   }
+  },
+  {
+   "uid": "f-885086d3b7",
+   "type": "PLANT",
+   "col": 10,
+   "row": 7
+  },
+  {
+   "uid": "f-4dcd1ebb24",
+   "type": "PLANT_2",
+   "col": 20,
+   "row": 7
+  },
+  {
+   "uid": "f-134df9ffc4",
+   "type": "WHITEBOARD",
+   "col": 22,
+   "row": -1
+  },
+  {
+   "uid": "f-f84b203915",
+   "type": "CLOCK",
+   "col": 25,
+   "row": -1
+  },
+  {
+   "uid": "f-6ec4c2f893",
+   "type": "LARGE_PAINTING",
+   "col": 26,
+   "row": -1
+  },
+  {
+   "uid": "f-86754c39b3",
+   "type": "TABLE_FRONT",
+   "col": 24,
+   "row": 3,
+   "color": {
+    "h": 0,
+    "s": -10,
+    "b": -22,
+    "c": 12
+   }
+  },
+  {
+   "uid": "f-0bc4435c2b",
+   "type": "PC_SIDE",
+   "col": 24,
+   "row": 3
+  },
+  {
+   "uid": "f-64d0c7c3c1",
+   "type": "PC_SIDE:left",
+   "col": 26,
+   "row": 3
+  },
+  {
+   "uid": "f-4d4c5b70ac",
+   "type": "CUSHIONED_CHAIR_SIDE",
+   "col": 23,
+   "row": 4,
+   "color": {
+    "h": 265,
+    "s": 10,
+    "b": -24,
+    "c": 20,
+    "colorize": true
+   }
+  },
+  {
+   "uid": "f-67c42c40c7",
+   "type": "CUSHIONED_CHAIR_SIDE",
+   "col": 23,
+   "row": 6,
+   "color": {
+    "h": 265,
+    "s": 10,
+    "b": -24,
+    "c": 20,
+    "colorize": true
+   }
+  },
+  {
+   "uid": "f-6dd3f80644",
+   "type": "CUSHIONED_CHAIR_SIDE:left",
+   "col": 27,
+   "row": 4,
+   "color": {
+    "h": 265,
+    "s": 10,
+    "b": -24,
+    "c": 20,
+    "colorize": true
+   }
+  },
+  {
+   "uid": "f-3fd68748fc",
+   "type": "CUSHIONED_CHAIR_SIDE:left",
+   "col": 27,
+   "row": 6,
+   "color": {
+    "h": 265,
+    "s": 10,
+    "b": -24,
+    "c": 20,
+    "colorize": true
+   }
+  },
+  {
+   "uid": "f-880daaaa08",
+   "type": "CUSHIONED_CHAIR_FRONT",
+   "col": 25,
    "row": 2,
    "color": {
     "h": 265,
@@ -4287,15 +4518,15 @@
    }
   },
   {
-   "uid": "f-008f46fed7",
+   "uid": "f-5f94e7f078",
    "type": "PLANT",
-   "col": 12,
+   "col": 22,
    "row": 6
   },
   {
-   "uid": "f-96b1f9ad10",
+   "uid": "f-03a83e5ced",
    "type": "PLANT_2",
-   "col": 17,
+   "col": 27,
    "row": 7
   },
   {
@@ -4335,22 +4566,22 @@
    "row": 9
   },
   {
-   "uid": "f-641466914c",
+   "uid": "f-a17dde32b9",
    "type": "DESK_FRONT",
    "col": 1,
-   "row": 12
+   "row": 11
   },
   {
-   "uid": "f-12858c6b1f",
+   "uid": "f-7220cdde4e",
    "type": "PC_FRONT_OFF",
    "col": 2,
-   "row": 12
+   "row": 11
   },
   {
-   "uid": "f-e1086a61aa",
+   "uid": "f-411a9483f9",
    "type": "CUSHIONED_CHAIR_BACK",
    "col": 2,
-   "row": 14,
+   "row": 13,
    "color": {
     "h": 222,
     "s": 16,
@@ -4360,22 +4591,22 @@
    }
   },
   {
-   "uid": "f-033e5ad58e",
+   "uid": "f-6ad7be82e3",
    "type": "DESK_FRONT",
    "col": 4,
-   "row": 12
+   "row": 11
   },
   {
-   "uid": "f-b3a37249b2",
+   "uid": "f-2cd675088c",
    "type": "PC_FRONT_OFF",
    "col": 5,
-   "row": 12
+   "row": 11
   },
   {
-   "uid": "f-ec78c79ab7",
+   "uid": "f-36eac9eab9",
    "type": "CUSHIONED_CHAIR_BACK",
    "col": 5,
-   "row": 14,
+   "row": 13,
    "color": {
     "h": 222,
     "s": 16,
@@ -4385,22 +4616,22 @@
    }
   },
   {
-   "uid": "f-264fd5c429",
+   "uid": "f-8f3ff1b15a",
    "type": "DESK_FRONT",
    "col": 9,
-   "row": 12
+   "row": 11
   },
   {
-   "uid": "f-848409d601",
+   "uid": "f-64db674881",
    "type": "PC_FRONT_OFF",
    "col": 10,
-   "row": 12
+   "row": 11
   },
   {
-   "uid": "f-07ffc223c4",
+   "uid": "f-75313105bc",
    "type": "CUSHIONED_CHAIR_BACK",
    "col": 10,
-   "row": 14,
+   "row": 13,
    "color": {
     "h": 222,
     "s": 16,
@@ -4410,22 +4641,22 @@
    }
   },
   {
-   "uid": "f-1447726581",
+   "uid": "f-9228642804",
    "type": "DESK_FRONT",
    "col": 1,
-   "row": 15
+   "row": 14
   },
   {
-   "uid": "f-eb29123733",
+   "uid": "f-7c3eb878ee",
    "type": "PC_FRONT_OFF",
    "col": 2,
-   "row": 15
+   "row": 14
   },
   {
-   "uid": "f-7afd3aa1bf",
+   "uid": "f-a1705a842f",
    "type": "CUSHIONED_CHAIR_BACK",
    "col": 2,
-   "row": 17,
+   "row": 16,
    "color": {
     "h": 222,
     "s": 16,
@@ -4435,22 +4666,22 @@
    }
   },
   {
-   "uid": "f-bf4f9e2442",
+   "uid": "f-29c182716e",
    "type": "DESK_FRONT",
    "col": 4,
-   "row": 15
+   "row": 14
   },
   {
-   "uid": "f-971e69433c",
+   "uid": "f-add32ea9aa",
    "type": "PC_FRONT_OFF",
    "col": 5,
-   "row": 15
+   "row": 14
   },
   {
-   "uid": "f-6705494370",
+   "uid": "f-a0f864db86",
    "type": "CUSHIONED_CHAIR_BACK",
    "col": 5,
-   "row": 17,
+   "row": 16,
    "color": {
     "h": 222,
     "s": 16,
@@ -4460,22 +4691,22 @@
    }
   },
   {
-   "uid": "f-1e75c85892",
+   "uid": "f-ffedf603e0",
    "type": "DESK_FRONT",
    "col": 9,
-   "row": 15
+   "row": 14
   },
   {
-   "uid": "f-d8e702e099",
+   "uid": "f-7fce21eef7",
    "type": "PC_FRONT_OFF",
    "col": 10,
-   "row": 15
+   "row": 14
   },
   {
-   "uid": "f-0295d636d4",
+   "uid": "f-5a9b767899",
    "type": "CUSHIONED_CHAIR_BACK",
    "col": 10,
-   "row": 17,
+   "row": 16,
    "color": {
     "h": 222,
     "s": 16,
@@ -4485,15 +4716,15 @@
    }
   },
   {
-   "uid": "f-e78a044bd3",
+   "uid": "f-77e7f82df3",
    "type": "PLANT",
-   "col": 4,
-   "row": 10
+   "col": 7,
+   "row": 16
   },
   {
-   "uid": "f-81cfa1facd",
+   "uid": "f-9eda6a2019",
    "type": "BIN",
-   "col": 11,
+   "col": 8,
    "row": 17
   },
   {
@@ -4901,7 +5132,7 @@
   null,
   {
    "variant": 2,
-   "order": 1,
+   "order": 2,
    "color": {
     "h": 228,
     "s": 28,
@@ -4919,7 +5150,7 @@
   },
   {
    "variant": 2,
-   "order": 1,
+   "order": 2,
    "color": {
     "h": 228,
     "s": 28,
@@ -4937,7 +5168,7 @@
   },
   {
    "variant": 2,
-   "order": 1,
+   "order": 2,
    "color": {
     "h": 228,
     "s": 28,
@@ -4955,7 +5186,7 @@
   },
   {
    "variant": 2,
-   "order": 1,
+   "order": 2,
    "color": {
     "h": 228,
     "s": 28,
@@ -4973,308 +5204,7 @@
   },
   {
    "variant": 2,
-   "order": 1,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 42,
-    "s": 55,
-    "b": 12,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  null,
-  null,
-  null,
-  {
-   "variant": 2,
    "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  {
-   "variant": 2,
-   "order": 1,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 42,
-    "s": 55,
-    "b": 12,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 1,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 42,
-    "s": 55,
-    "b": 12,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 1,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 42,
-    "s": 55,
-    "b": 12,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 1,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 42,
-    "s": 55,
-    "b": 12,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 1,
    "color": {
     "h": 228,
     "s": 28,
@@ -5293,222 +5223,17 @@
   null,
   null,
   null,
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
   null,
   null,
   null,
   {
-   "variant": 2,
+   "variant": 0,
    "order": 1,
    "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
     "colorize": true
    },
    "accentColor": {
@@ -5520,13 +5245,13 @@
    }
   },
   {
-   "variant": 2,
+   "variant": 0,
    "order": 1,
    "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
     "colorize": true
    },
    "accentColor": {
@@ -5538,13 +5263,13 @@
    }
   },
   {
-   "variant": 2,
+   "variant": 0,
    "order": 1,
    "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
     "colorize": true
    },
    "accentColor": {
@@ -5556,13 +5281,13 @@
    }
   },
   {
-   "variant": 2,
+   "variant": 0,
    "order": 1,
    "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
     "colorize": true
    },
    "accentColor": {
@@ -5574,13 +5299,13 @@
    }
   },
   {
-   "variant": 2,
+   "variant": 0,
    "order": 1,
    "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
     "colorize": true
    },
    "accentColor": {
@@ -5594,1248 +5319,10 @@
   null,
   null,
   null,
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
   null,
   null,
   {
-   "variant": 2,
-   "order": 1,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 42,
-    "s": 55,
-    "b": 12,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 1,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 42,
-    "s": 55,
-    "b": 12,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 1,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 42,
-    "s": 55,
-    "b": 12,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 1,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 42,
-    "s": 55,
-    "b": 12,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 1,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 42,
-    "s": 55,
-    "b": 12,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  null,
-  null,
-  null,
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  {
-   "variant": 2,
-   "order": 1,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 42,
-    "s": 55,
-    "b": 12,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 1,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 42,
-    "s": 55,
-    "b": 12,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 1,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 42,
-    "s": 55,
-    "b": 12,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 1,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 42,
-    "s": 55,
-    "b": 12,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 1,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 42,
-    "s": 55,
-    "b": 12,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  null,
-  null,
-  null,
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  {
-   "variant": 2,
-   "order": 2,
-   "color": {
-    "h": 228,
-    "s": 28,
-    "b": -42,
-    "c": -20,
-    "colorize": true
-   },
-   "accentColor": {
-    "h": 220,
-    "s": 10,
-    "b": 15,
-    "c": 0,
-    "colorize": true
-   }
-  },
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  {
-   "variant": 2,
+   "variant": 0,
    "order": 3,
    "color": {
     "h": 228,
@@ -6853,7 +5340,7 @@
    }
   },
   {
-   "variant": 2,
+   "variant": 0,
    "order": 3,
    "color": {
     "h": 228,
@@ -6871,7 +5358,1378 @@
    }
   },
   {
+   "variant": 0,
+   "order": 3,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 3,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 3,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  null,
+  null,
+  null,
+  {
    "variant": 2,
+   "order": 2,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 2,
+   "order": 2,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 2,
+   "order": 2,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 2,
+   "order": 2,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 2,
+   "order": 2,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  {
+   "variant": 0,
+   "order": 1,
+   "color": {
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 1,
+   "color": {
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 1,
+   "color": {
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 1,
+   "color": {
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 1,
+   "color": {
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  null,
+  null,
+  null,
+  null,
+  null,
+  {
+   "variant": 0,
+   "order": 3,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 3,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 3,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 3,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 3,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  null,
+  null,
+  null,
+  {
+   "variant": 2,
+   "order": 2,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 2,
+   "order": 2,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 2,
+   "order": 2,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 2,
+   "order": 2,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 2,
+   "order": 2,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  {
+   "variant": 0,
+   "order": 1,
+   "color": {
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 1,
+   "color": {
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 1,
+   "color": {
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 1,
+   "color": {
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 1,
+   "color": {
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  null,
+  null,
+  null,
+  null,
+  null,
+  {
+   "variant": 0,
+   "order": 3,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 3,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 3,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 3,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 3,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  null,
+  null,
+  null,
+  {
+   "variant": 2,
+   "order": 2,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 2,
+   "order": 2,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 2,
+   "order": 2,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 2,
+   "order": 2,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 2,
+   "order": 2,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  {
+   "variant": 0,
+   "order": 1,
+   "color": {
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 1,
+   "color": {
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 1,
+   "color": {
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 1,
+   "color": {
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 1,
+   "color": {
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  null,
+  null,
+  null,
+  null,
+  null,
+  {
+   "variant": 0,
+   "order": 3,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 3,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 3,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 3,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 3,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  null,
+  null,
+  null,
+  {
+   "variant": 2,
+   "order": 2,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 2,
+   "order": 2,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 2,
+   "order": 2,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 2,
+   "order": 2,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 2,
+   "order": 2,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  {
+   "variant": 0,
+   "order": 1,
+   "color": {
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 1,
+   "color": {
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 1,
+   "color": {
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 1,
+   "color": {
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 1,
+   "color": {
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  null,
+  null,
+  null,
+  null,
+  null,
+  {
+   "variant": 0,
+   "order": 3,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 3,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 3,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 3,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 3,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  {
+   "variant": 0,
+   "order": 1,
+   "color": {
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 1,
+   "color": {
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 1,
+   "color": {
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 1,
+   "color": {
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 1,
+   "color": {
+    "h": 265,
+    "s": 36,
+    "b": -36,
+    "c": -22,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 42,
+    "s": 55,
+    "b": 12,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  null,
+  null,
+  null,
+  null,
+  null,
+  {
+   "variant": 0,
+   "order": 3,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 3,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 3,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
+   "order": 3,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 0,
    "order": 3,
    "color": {
     "h": 228,
@@ -6914,9 +6772,200 @@
   null,
   null,
   null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
   {
    "variant": 2,
-   "order": 3,
+   "order": 4,
    "color": {
     "h": 228,
     "s": 28,
@@ -6934,7 +6983,7 @@
   },
   {
    "variant": 2,
-   "order": 3,
+   "order": 4,
    "color": {
     "h": 228,
     "s": 28,
@@ -6952,7 +7001,7 @@
   },
   {
    "variant": 2,
-   "order": 3,
+   "order": 4,
    "color": {
     "h": 228,
     "s": 28,
@@ -6996,7 +7045,7 @@
   null,
   {
    "variant": 2,
-   "order": 3,
+   "order": 4,
    "color": {
     "h": 228,
     "s": 28,
@@ -7014,7 +7063,7 @@
   },
   {
    "variant": 2,
-   "order": 3,
+   "order": 4,
    "color": {
     "h": 228,
     "s": 28,
@@ -7032,7 +7081,87 @@
   },
   {
    "variant": 2,
-   "order": 3,
+   "order": 4,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  {
+   "variant": 2,
+   "order": 4,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 2,
+   "order": 4,
+   "color": {
+    "h": 228,
+    "s": 28,
+    "b": -42,
+    "c": -20,
+    "colorize": true
+   },
+   "accentColor": {
+    "h": 220,
+    "s": 10,
+    "b": 15,
+    "c": 0,
+    "colorize": true
+   }
+  },
+  {
+   "variant": 2,
+   "order": 4,
    "color": {
     "h": 228,
     "s": 28,
