@@ -1,12 +1,17 @@
 #!/usr/bin/env python3
-"""Engine-faithful reachability (pixel-agents 1.3.0 webview bundle):
+"""Engine-faithful reachability (pixel-agents 1.3.0 webview bundle; 1.4.1 has the same catalog, walkability and BFS):
  blockedTiles = Qt(furniture)  -> every non-bg footprint tile of EVERY item (chairs + wall items included)
  isWalkable   = sr(): in bounds, tile != WALL(0), != VOID(255), not in blockedTiles
  pathfinding  = lr(): 4-neighbour BFS; target must be walkable; own seat unblocked via withOwnSeatUnblocked
 """
-import json, sys
+import json, sys, os, glob
 from collections import deque
-CAT = {e['id']: e for e in json.load(open('/Users/Bilol/.vscode/extensions/pablodelucca.pixel-agents-1.3.0/dist/webview/assets/furniture-catalog.json'))}
+def _catalog_path():
+    # newest installed extension's catalog; falls back to the kit's own copy
+    found = glob.glob(os.path.expanduser('~/.vscode/extensions/pablodelucca.pixel-agents-*/dist/webview/assets/furniture-catalog.json'))
+    ver = lambda p: tuple(int(x) for x in p.split('pixel-agents-')[1].split('/')[0].split('.') if x.isdigit())
+    return max(found, key=ver) if found else os.path.join(os.path.dirname(os.path.abspath(__file__)), 'furniture-catalog.json')
+CAT = {e['id']: e for e in json.load(open(_catalog_path()))}
 def ent(t):
     base = t.split(':')[0]
     return CAT.get(base)
