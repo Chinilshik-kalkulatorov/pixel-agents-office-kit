@@ -1,39 +1,47 @@
-# OFFICE v10 — 25 x 20 = 500. Поверх v9 по указу 09-21 (три картинки владельца):
-#   * Левый верхний кабинет (CTO, 1-8) — как есть, без изменений и без новых дверей.
-#   * Центр — КОМПАКТНАЯ переговорная один в один как старая правая комната (v8, колонки 22-27), перенесённая сдвигом -12:
-#     комната 10-15, стены 9 и 16, ковёр 11-15 x 2-7 (variant 0), доска/часы/картина, стол 12-14, 5 кресел, 2 растения.
-#     Нижняя дверь старой комнаты (22-23) легла на 10-11 → вход из рабочей. Дверь 14-15 → будка администратора (его выход).
-#   * Правая верхняя комната УДАЛЕНА ЦЕЛИКОМ: над кухней пустота (void), здание стало Г-образным.
-#   * Правая часть кухни (колонки 24-27: два столика, 4 кресла, растения, картина, подвесное растение) УДАЛЕНА: кухня 17-23,
-#     новая правая стена — колонка 24; верхняя дверь кухни 22-23 закрыта (вела в удалённую комнату). Сетка ужата с 29 до 25 колонок.
-#   * Рабочая: вторая доска (10,9) снята — на её месте дверь в переговорную. Остальное как в v9.
+# OFFICE v11 — 29 x 20 = 580. УКАЗ ВЛАДЕЛЬЦА 30.09: «сделай офис прямо как нарисовано» — картинка = карточка архива a15
+# «v7 с вашими правками ресепшна» (живой файл 14.09 18:54, бэкап layout_backup_2026-09-14_191359.json). v10 → office_spec_v10.py.
+# Это v7 (ниже её описание) + ручные правки владельца от 14.09, перенесённые один в один:
+#   * дверь зал→ресепшн (14-15, ряд 10) ЗАКРЫТА;
+#   * дверь рабочая↔ресепшн поднята: (12, 15-16) → (12, 14-15);
+#   * стойка администратора и монитор на ряд выше: DESK_FRONT (13,13)→(13,12), PC_BACK (14,13)→(14,12).
+#   Кресло администратора (14,12) при этом заперто в будке 13-15 × 11-12 (выхода нет) — так нарисовано, так и оставлено.
+#   * цвета шапок стен — как в том файле (он собран старым китом до правки порядка цветов 14.09) → WALL_TILE_COLORS.
+#
+# (v7) Поверх v6:
+#   * КУХНЯ — точь-в-точь как в большом офисе (фото): полка над стойкой, подвесные растения по бокам двери,
+#     стойка с проходом бариста слева, диван с журнальным столиком слева внизу, четыре столика, растения справа.
+#     Дверь из зала в кухню ужата до одной клетки (колонка 17), чтобы полка встала на своё место.
+#   * КАБИНЕТ CEO = ЛЕВЫЙ (синий): диван на двоих слева с журнальным столиком, рабочая зона справа сверху
+#     (золотое кресло, два монитора, кружка, урна), гостевое кресло, свой фиолетовый ковёр, растения.
+#   * ЗАЛ и ПРАВЫЙ КАБИНЕТ возвращены как были в v5 (зал с горизонтальным столом; правый — стол боком,
+#     хозяин и гость друг напротив друга, диван с журнальным столиком, зелёная стена).
 #
 # rows: 0 стена | 1-9 верх (ряд 9 скрыт) | 10 стена с дверями | 11-18 низ (ряд 18 скрыт) | 19 стена + вход
-# cols верх: CTO 1-8 | стена 9 | ПЕРЕГОВОРНАЯ 10-15 | стена 16 | 17-24 пустота
-# cols низ:  рабочая 1-11 | стена 12 | ресепшн 13-15 | стена 16 | кухня 17-23 | стена 24
-# двери: CTO→рабочая 7-8 · переговорная→рабочая 10-11 · переговорная→ресепшн 14-15 (выход администратора) ·
-#        ресепшн↔рабочая (12, 14-15) · ресепшн↔кухня (16, 14-15) · с улицы 14-15
+# cols верх: CEO 1-8 | стена 9 | ЗАЛ 10-19 | стена 20 | КАБИНЕТ 21-27 | стена 28
+# cols низ:  рабочая 1-11 | стена 12 | ресепшн 13-15 | стена 16 | кухня 17-27 | стена 28
+# двери (v11): CEO→рабочая 7-8 · зал→кухня 17 · правый кабинет→кухня 22-23 · рабочая↔ресепшн (12, 14-15) ·
+#              ресепшн↔кухня (16, 16-17) · с улицы 14-15
 MAP = """
-#################........
-#cccccccc#mmmmmm#........
-#cccccccc#mmmmmm#........
-#cccccccc#mmmmmm#........
-#cccccccc#mmmmmm#........
-#cccccccc#mmmmmm#........
-#cccccccc#mmmmmm#........
-#cccccccc#mmmmmm#........
-#cccccccc#mmmmmm#........
-#cccccccc#mmmmmm#........
-#######cc#mm##mm#########
-#sssssssssss#LLL#bbbbbbb#
-#sssssssssss#LLL#bbbbbbb#
-#sssssssssss#LLL#bbbbbbb#
-#ssssssssssssLLLbbbbbbbb#
-#sssssssssssLLLLbbbbbbbb#
-#sssssssssss#LLL#bbbbbbb#
-#sssssssssss#LLL#bbbbbbb#
-#sssssssssss#LLL#bbbbbbb#
-##############LL#########
+#############################
+#cccccccc#EEEEEEEEEE#mmmmmmm#
+#cccccccc#EEEEEEEEEE#mmmmmmm#
+#cccccccc#EEEEEEEEEE#mmmmmmm#
+#cccccccc#EEEEEEEEEE#mmmmmmm#
+#cccccccc#EEEEEEEEEE#mmmmmmm#
+#cccccccc#EEEEEEEEEE#mmmmmmm#
+#cccccccc#EEEEEEEEEE#mmmmmmm#
+#cccccccc#EEEEEEEEEE#mmmmmmm#
+#cccccccc#EEEEEEEEEE#mmmmmmm#
+#######cc########E####mm#####
+#sssssssssss#LLL#bbbbbbbbbbb#
+#sssssssssss#LLL#bbbbbbbbbbb#
+#sssssssssss#LLL#bbbbbbbbbbb#
+#ssssssssssssLLL#bbbbbbbbbbb#
+#sssssssssssLLLL#bbbbbbbbbbb#
+#sssssssssss#LLLbbbbbbbbbbbb#
+#sssssssssss#LLLbbbbbbbbbbbb#
+#sssssssssss#LLL#bbbbbbbbbbb#
+##############LL#############
 """
 
 ESPRESSO = {'h': 24, 's': 20, 'b': -50, 'c': -82}   # зал
@@ -53,12 +61,14 @@ LEGEND = {
 
 VIOLET_WALL = {'h': 265, 's': 35, 'b': -75, 'c': -45}
 NAVY_WALL   = {'h': 228, 's': 32, 'b': -80, 'c': -45}
-GREEN_WALL  = {'h': 168, 's': 30, 'b': -78, 'c': -45}   # не используется в v8 (переговорная = фиолет, как в большом)
+GREEN_WALL  = {'h': 168, 's': 30, 'b': -78, 'c': -45}
 CHARCOAL    = {'h': 220, 's': 12, 'b': -85, 'c': -40}
 CREAM_WALL  = {'h': 38, 's': 18, 'b': -22, 'c': -55}
 WALL_COLOR = CHARCOAL
-WALL_COLORS = {'E': VIOLET_WALL, 'c': NAVY_WALL, 'm': VIOLET_WALL, 'L': CHARCOAL, 's': CHARCOAL, 'b': CREAM_WALL}
-WALL_TILE_COLORS = {(16, 10): CREAM_WALL, (12, 10): CHARCOAL, (24, 19): CREAM_WALL}   # шапки стыков: соседние двери красили их в фиолет
+WALL_COLORS = {'E': VIOLET_WALL, 'c': NAVY_WALL, 'm': GREEN_WALL, 'L': CHARCOAL, 's': CHARCOAL, 'b': CREAM_WALL}
+# шапки стыков — как в файле владельца (a15): верхние углы графит, (12,10) фиолет, (28,10) графит
+WALL_TILE_COLORS = {(0, 0): CHARCOAL, (9, 0): CHARCOAL, (20, 0): CHARCOAL, (28, 0): CHARCOAL,
+                    (12, 10): VIOLET_WALL, (28, 10): CHARCOAL}
 
 WOOD_DARK  = {'h': 0, 's': -10, 'b': -22, 'c': 12}
 LEATHER    = {'h': 265, 's': 10, 'b': -24, 'c': 20, 'colorize': True}
@@ -69,56 +79,70 @@ STAFF_SEAT = {'h': 222, 's': 16, 'b': -14, 'c': 0, 'colorize': True}
 CAFE_SEAT  = {'h': 20, 's': 40, 'b': -20, 'c': 8, 'colorize': True}
 
 FURNITURE = [
-  # ===== CTO (cols 1-8) — без изменений
-  ('DOUBLE_BOOKSHELF', 1, -1), ('WHITEBOARD', 4, -1), ('CLOCK', 7, -1),
-  ('DESK_FRONT', 3, 3, WOOD_DARK), ('PC_BACK', 4, 3),
-  ('CUSHIONED_CHAIR_FRONT', 4, 2, LEATHER),
-  ('CUSHIONED_CHAIR_BACK', 4, 5, VELVET_GRN),
-  ('CUSHIONED_CHAIR_SIDE', 1, 7, VELVET_GRN), ('COFFEE_TABLE', 2, 7, WOOD_DARK), ('COFFEE', 3, 7),
-  ('LARGE_PLANT', 7, 5), ('BIN', 7, 4), ('PLANT_2', 1, 1),
-  # ===== ПЕРЕГОВОРНАЯ (cols 10-15) — старая правая комната v8, сдвиг -12 колонок, ряды те же
-  ('WHITEBOARD', 10, -1), ('CLOCK', 13, -1), ('LARGE_PAINTING', 14, -1),
-  ('TABLE_FRONT', 12, 3, WOOD_DARK), ('PC_SIDE', 12, 3), ('PC_SIDE:left', 14, 3),
-  ('CUSHIONED_CHAIR_SIDE', 11, 4, LEATHER), ('CUSHIONED_CHAIR_SIDE', 11, 6, LEATHER),
-  ('CUSHIONED_CHAIR_SIDE:left', 15, 4, LEATHER), ('CUSHIONED_CHAIR_SIDE:left', 15, 6, LEATHER),
-  ('CUSHIONED_CHAIR_FRONT', 13, 2, LEATHER),
-  ('PLANT', 10, 7), ('PLANT_2', 15, 7),   # на картинке было (10,6): без левого проёма горшок (10,7) + кресло (11,6) запирали верх комнаты (в движке чужие кресла непроходимы)
-  # ===== РАБОЧАЯ КОМНАТА (cols 1-11) — как v9; доска (10,9) снята: там дверь в переговорную
+  # ===== КАБИНЕТ CEO (левый, cols 1-8) — доработан: диван на двоих слева, рабочая зона справа сверху
+  ('DOUBLE_BOOKSHELF', 1, -1), ('LARGE_PAINTING', 3, -1), ('CLOCK', 5, -1), ('SMALL_PAINTING_2', 7, -1),
+  ('CUSHIONED_CHAIR_FRONT', 6, 1, GOLD_SEAT),
+  ('DESK_FRONT', 5, 2, WOOD_DARK), ('PC_BACK', 5, 2), ('PC_BACK', 6, 2), ('COFFEE', 7, 3),
+  ('CUSHIONED_CHAIR_BACK', 6, 4, VELVET_GRN),
+  ('SOFA_SIDE', 1, 3, COGNAC), ('COFFEE_TABLE', 2, 3, WOOD_DARK), ('COFFEE', 3, 3),
+  ('LARGE_PLANT', 7, 5), ('PLANT_2', 1, 6), ('BIN', 8, 4),
+  # ===== ЗАЛ (cols 10-19) — как было
+  ('DOUBLE_BOOKSHELF', 10, -1), ('LARGE_PAINTING', 12, -1), ('CLOCK', 15, -1),
+  ('LARGE_PAINTING', 16, -1), ('DOUBLE_BOOKSHELF', 18, -1),
+  ('TABLE_FRONT', 12, 3, WOOD_DARK), ('TABLE_FRONT', 15, 3, WOOD_DARK),
+  ('PC_SIDE', 12, 3), ('PC_SIDE:left', 17, 3),
+  ('CUSHIONED_CHAIR_FRONT', 13, 2, LEATHER), ('CUSHIONED_CHAIR_FRONT', 16, 2, LEATHER),
+  ('CUSHIONED_CHAIR_BACK', 13, 7, LEATHER), ('CUSHIONED_CHAIR_BACK', 16, 7, LEATHER),
+  ('CUSHIONED_CHAIR_SIDE', 11, 5, LEATHER), ('CUSHIONED_CHAIR_SIDE:left', 18, 5, LEATHER),
+  ('LARGE_PLANT', 10, 6), ('LARGE_PLANT', 18, 6),
+  # ===== ПРАВЫЙ КАБИНЕТ (cols 21-27) — как был: стол боком, хозяин и гость друг напротив друга
+  ('WHITEBOARD', 21, -1), ('LARGE_PAINTING', 24, -1), ('CLOCK', 27, -1),
+  ('DESK_SIDE', 23, 2, WOOD_DARK), ('PC_SIDE:left', 23, 3),
+  ('CUSHIONED_CHAIR_SIDE:left', 24, 4, LEATHER), ('CUSHIONED_CHAIR_SIDE', 22, 4, VELVET_GRN),
+  ('SOFA_FRONT', 26, 5, COGNAC), ('COFFEE_TABLE', 26, 6, WOOD_DARK), ('COFFEE', 27, 6),
+  ('LARGE_PLANT', 21, 6), ('PLANT_2', 27, 1), ('BIN', 21, 2),
+  # ===== РАБОЧАЯ КОМНАТА (cols 1-11) — шесть компьютеров, правые столы упёрты в стену
   ('SMALL_PAINTING', 1, 9), ('WHITEBOARD', 2, 9), ('HANGING_PLANT', 5, 9), ('CLOCK', 6, 9),
-  ('HANGING_PLANT', 9, 9),
-  ('DESK_FRONT', 1, 12), ('PC_FRONT_OFF', 2, 12), ('CUSHIONED_CHAIR_BACK', 2, 14, STAFF_SEAT),
-  ('DESK_FRONT', 4, 12), ('PC_FRONT_OFF', 5, 12), ('CUSHIONED_CHAIR_BACK', 5, 14, STAFF_SEAT),
-  ('DESK_FRONT', 9, 12), ('PC_FRONT_OFF', 10, 12), ('CUSHIONED_CHAIR_BACK', 10, 14, STAFF_SEAT),
-  ('DESK_FRONT', 1, 15), ('PC_FRONT_OFF', 2, 15), ('CUSHIONED_CHAIR_BACK', 2, 17, STAFF_SEAT),
-  ('DESK_FRONT', 4, 15), ('PC_FRONT_OFF', 5, 15), ('CUSHIONED_CHAIR_BACK', 5, 17, STAFF_SEAT),
-  ('DESK_FRONT', 9, 15), ('PC_FRONT_OFF', 10, 15), ('CUSHIONED_CHAIR_BACK', 10, 17, STAFF_SEAT),
-  ('PLANT', 4, 10), ('BIN', 11, 17),
-  # ===== РЕСЕПШН (cols 13-15) — без изменений
+  ('HANGING_PLANT', 9, 9), ('WHITEBOARD', 10, 9),
+  ('DESK_FRONT', 1, 11), ('PC_FRONT_OFF', 2, 11), ('CUSHIONED_CHAIR_BACK', 2, 13, STAFF_SEAT),
+  ('DESK_FRONT', 4, 11), ('PC_FRONT_OFF', 5, 11), ('CUSHIONED_CHAIR_BACK', 5, 13, STAFF_SEAT),
+  ('DESK_FRONT', 9, 11), ('PC_FRONT_OFF', 10, 11), ('CUSHIONED_CHAIR_BACK', 10, 13, STAFF_SEAT),
+  ('DESK_FRONT', 1, 14), ('PC_FRONT_OFF', 2, 14), ('CUSHIONED_CHAIR_BACK', 2, 16, STAFF_SEAT),
+  ('DESK_FRONT', 4, 14), ('PC_FRONT_OFF', 5, 14), ('CUSHIONED_CHAIR_BACK', 5, 16, STAFF_SEAT),
+  ('DESK_FRONT', 9, 14), ('PC_FRONT_OFF', 10, 14), ('CUSHIONED_CHAIR_BACK', 10, 16, STAFF_SEAT),
+  ('PLANT', 7, 16), ('BIN', 8, 17),
+  # ===== РЕСЕПШН (cols 13-15) — стойка во всю ширину, диван владельца, ковёр; стойка с монитором на ряд выше (правка владельца 14.09)
   ('SMALL_PAINTING', 13, 9),
   ('PLANT_2', 13, 11),
   ('CUSHIONED_CHAIR_FRONT', 14, 12, LEATHER),
   ('DESK_FRONT', 13, 12, WOOD_DARK), ('PC_BACK', 14, 12),
   ('SOFA_SIDE', 13, 15, CAFE_SEAT),
-  # ===== КУХНЯ (cols 17-23) — правая часть (24-27) удалена; оставшееся без изменений
-  ('BOOKSHELF', 18, 10), ('HANGING_PLANT', 21, 9),
+  # ===== КУХНЯ (cols 17-27) — точь-в-точь как в большом офисе
+  ('BOOKSHELF', 18, 10), ('HANGING_PLANT', 21, 9), ('HANGING_PLANT', 24, 9), ('LARGE_PAINTING', 26, 9),
   ('DESK_SIDE', 18, 11, WOOD_DARK), ('COFFEE', 18, 12), ('COFFEE', 18, 14),
   ('WOODEN_BENCH', 19, 12), ('WOODEN_BENCH', 19, 14),
   ('SMALL_TABLE_FRONT', 20, 11, WOOD_DARK), ('COFFEE', 21, 12),
   ('CUSHIONED_CHAIR_BACK', 20, 13, CAFE_SEAT), ('CUSHIONED_CHAIR_BACK', 21, 13, CAFE_SEAT),
+  ('SMALL_TABLE_FRONT', 24, 11, WOOD_DARK), ('COFFEE', 24, 12),
+  ('CUSHIONED_CHAIR_BACK', 24, 13, CAFE_SEAT), ('CUSHIONED_CHAIR_BACK', 25, 13, CAFE_SEAT),
   ('SMALL_TABLE_FRONT', 20, 15, WOOD_DARK), ('COFFEE', 20, 16),
   ('CUSHIONED_CHAIR_BACK', 20, 17, CAFE_SEAT), ('CUSHIONED_CHAIR_BACK', 21, 17, CAFE_SEAT),
-  ('SOFA_SIDE', 17, 16, CAFE_SEAT), ('COFFEE_TABLE', 18, 16, WOOD_DARK), ('COFFEE', 19, 16),
-  ('BIN', 23, 11),   # было (22,17): после обреза кухни это единственный вход в нижний ряд — урна в правый верхний угол
+  ('SMALL_TABLE_FRONT', 24, 15, WOOD_DARK), ('COFFEE', 25, 16),
+  ('CUSHIONED_CHAIR_BACK', 24, 17, CAFE_SEAT), ('CUSHIONED_CHAIR_BACK', 25, 17, CAFE_SEAT),
+  ('SOFA_SIDE', 17, 15, CAFE_SEAT), ('COFFEE_TABLE', 18, 15, WOOD_DARK), ('COFFEE', 19, 15),
+  ('PLANT_2', 27, 11), ('LARGE_PLANT', 26, 15), ('BIN', 19, 17),
 ]
 
 RUG_VIOLET = {'h': 265, 's': 36, 'b': -36, 'c': -22}
 RUG_GOLD   = {'h': 42, 's': 55, 'b': 12, 'c': 0}
 RUG_NAVY   = {'h': 228, 's': 28, 'b': -42, 'c': -20}
+RUG_GREEN  = {'h': 168, 's': 26, 'b': -44, 'c': -20}
 RUG_SILVER = {'h': 220, 's': 10, 'b': 15, 'c': 0}
 
 CARPETS = [
-  {'variant': 2, 'col': 2, 'row': 2, 'w': 5, 'h': 5, 'color': RUG_NAVY, 'accent': RUG_GOLD},      # CTO
-  {'variant': 0, 'col': 11, 'row': 2, 'w': 5, 'h': 6, 'color': RUG_NAVY, 'accent': RUG_SILVER},   # переговорная — как в старой правой комнате
+  {'variant': 0, 'col': 5, 'row': 1, 'w': 3, 'h': 4, 'color': RUG_VIOLET, 'accent': RUG_GOLD},    # CEO — свой цвет
+  {'variant': 0, 'col': 11, 'row': 3, 'w': 8, 'h': 5, 'color': RUG_NAVY, 'accent': RUG_GOLD},     # зал
+  {'variant': 0, 'col': 22, 'row': 2, 'w': 4, 'h': 5, 'color': RUG_GREEN, 'accent': RUG_GOLD},    # правый кабинет
   {'variant': 2, 'col': 13, 'row': 15, 'w': 3, 'h': 3, 'color': RUG_NAVY, 'accent': RUG_SILVER},  # ковёр администратора
 ]
 
