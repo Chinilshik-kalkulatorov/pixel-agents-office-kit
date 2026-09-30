@@ -1,4 +1,7 @@
-# OFFICE v11 — 29 x 20 = 580. УКАЗ ВЛАДЕЛЬЦА 30.09: «сделай офис прямо как нарисовано» — картинка = карточка архива a15
+# OFFICE v11.1 — 29 x 20 = 580. = v11 + ручные правки владельца в редакторе 30.09 ~13:45-14:00 (15 предметов сдвинуты, uid те же):
+#   CEO: стол, оба монитора, кружка и зелёное кресло на ряд выше; растение PLANT из рабочей (7,16) → CEO (3,6);
+#   рабочая: нижний ряд столов/мониторов/кресел на ряд ниже (столы 15, кресла 17). v11 → office_spec_v11.py.
+# (v11) УКАЗ ВЛАДЕЛЬЦА 30.09: «сделай офис прямо как нарисовано» — картинка = карточка архива a15
 # «v7 с вашими правками ресепшна» (живой файл 14.09 18:54, бэкап layout_backup_2026-09-14_191359.json). v10 → office_spec_v10.py.
 # Это v7 (ниже её описание) + ручные правки владельца от 14.09, перенесённые один в один:
 #   * дверь зал→ресепшн (14-15, ряд 10) ЗАКРЫТА;
@@ -82,8 +85,8 @@ FURNITURE = [
   # ===== КАБИНЕТ CEO (левый, cols 1-8) — доработан: диван на двоих слева, рабочая зона справа сверху
   ('DOUBLE_BOOKSHELF', 1, -1), ('LARGE_PAINTING', 3, -1), ('CLOCK', 5, -1), ('SMALL_PAINTING_2', 7, -1),
   ('CUSHIONED_CHAIR_FRONT', 6, 1, GOLD_SEAT),
-  ('DESK_FRONT', 5, 2, WOOD_DARK), ('PC_BACK', 5, 2), ('PC_BACK', 6, 2), ('COFFEE', 7, 3),
-  ('CUSHIONED_CHAIR_BACK', 6, 4, VELVET_GRN),
+  ('DESK_FRONT', 5, 1, WOOD_DARK), ('PC_BACK', 5, 1), ('PC_BACK', 6, 1), ('COFFEE', 7, 2),   # правка владельца 30.09: на ряд выше
+  ('CUSHIONED_CHAIR_BACK', 6, 3, VELVET_GRN),
   ('SOFA_SIDE', 1, 3, COGNAC), ('COFFEE_TABLE', 2, 3, WOOD_DARK), ('COFFEE', 3, 3),
   ('LARGE_PLANT', 7, 5), ('PLANT_2', 1, 6), ('BIN', 8, 4),
   # ===== ЗАЛ (cols 10-19) — как было
@@ -107,10 +110,10 @@ FURNITURE = [
   ('DESK_FRONT', 1, 11), ('PC_FRONT_OFF', 2, 11), ('CUSHIONED_CHAIR_BACK', 2, 13, STAFF_SEAT),
   ('DESK_FRONT', 4, 11), ('PC_FRONT_OFF', 5, 11), ('CUSHIONED_CHAIR_BACK', 5, 13, STAFF_SEAT),
   ('DESK_FRONT', 9, 11), ('PC_FRONT_OFF', 10, 11), ('CUSHIONED_CHAIR_BACK', 10, 13, STAFF_SEAT),
-  ('DESK_FRONT', 1, 14), ('PC_FRONT_OFF', 2, 14), ('CUSHIONED_CHAIR_BACK', 2, 16, STAFF_SEAT),
-  ('DESK_FRONT', 4, 14), ('PC_FRONT_OFF', 5, 14), ('CUSHIONED_CHAIR_BACK', 5, 16, STAFF_SEAT),
-  ('DESK_FRONT', 9, 14), ('PC_FRONT_OFF', 10, 14), ('CUSHIONED_CHAIR_BACK', 10, 16, STAFF_SEAT),
-  ('PLANT', 7, 16), ('BIN', 8, 17),
+  ('DESK_FRONT', 1, 15), ('PC_FRONT_OFF', 2, 15), ('CUSHIONED_CHAIR_BACK', 2, 17, STAFF_SEAT),     # правка владельца 30.09: нижний ряд на ряд ниже
+  ('DESK_FRONT', 4, 15), ('PC_FRONT_OFF', 5, 15), ('CUSHIONED_CHAIR_BACK', 5, 17, STAFF_SEAT),
+  ('DESK_FRONT', 9, 15), ('PC_FRONT_OFF', 10, 15), ('CUSHIONED_CHAIR_BACK', 10, 17, STAFF_SEAT),
+  ('PLANT', 3, 6), ('BIN', 8, 17),   # растение владелец перенёс из рабочей (7,16) в кабинет CEO (3,6); в списке на прежнем месте
   # ===== РЕСЕПШН (cols 13-15) — стойка во всю ширину, диван владельца, ковёр; стойка с монитором на ряд выше (правка владельца 14.09)
   ('SMALL_PAINTING', 13, 9),
   ('PLANT_2', 13, 11),

@@ -4106,10 +4106,10 @@
    }
   },
   {
-   "uid": "f-488db6f545",
+   "uid": "f-2556e70302",
    "type": "DESK_FRONT",
    "col": 5,
-   "row": 2,
+   "row": 1,
    "color": {
     "h": 0,
     "s": -10,
@@ -4118,28 +4118,28 @@
    }
   },
   {
-   "uid": "f-d581073bb2",
+   "uid": "f-2662ab2d58",
    "type": "PC_BACK",
    "col": 5,
-   "row": 2
+   "row": 1
   },
   {
-   "uid": "f-4e33bd8d78",
+   "uid": "f-d300075ff1",
    "type": "PC_BACK",
    "col": 6,
+   "row": 1
+  },
+  {
+   "uid": "f-c836e52d7c",
+   "type": "COFFEE",
+   "col": 7,
    "row": 2
   },
   {
-   "uid": "f-8700bf01ac",
-   "type": "COFFEE",
-   "col": 7,
-   "row": 3
-  },
-  {
-   "uid": "f-e09fd498ab",
+   "uid": "f-ca417d673c",
    "type": "CUSHIONED_CHAIR_BACK",
    "col": 6,
-   "row": 4,
+   "row": 3,
    "color": {
     "h": 160,
     "s": 26,
@@ -4576,22 +4576,22 @@
    }
   },
   {
-   "uid": "f-7b6b78345b",
+   "uid": "f-0c700aff60",
    "type": "DESK_FRONT",
    "col": 1,
-   "row": 14
+   "row": 15
   },
   {
-   "uid": "f-d5a8775058",
+   "uid": "f-0fd6b0a63f",
    "type": "PC_FRONT_OFF",
    "col": 2,
-   "row": 14
+   "row": 15
   },
   {
-   "uid": "f-a5a122a7de",
+   "uid": "f-35e8490657",
    "type": "CUSHIONED_CHAIR_BACK",
    "col": 2,
-   "row": 16,
+   "row": 17,
    "color": {
     "h": 222,
     "s": 16,
@@ -4601,22 +4601,22 @@
    }
   },
   {
-   "uid": "f-2388105514",
+   "uid": "f-84e9807573",
    "type": "DESK_FRONT",
    "col": 4,
-   "row": 14
+   "row": 15
   },
   {
-   "uid": "f-f5a3a949f5",
+   "uid": "f-8c0e8b6e76",
    "type": "PC_FRONT_OFF",
    "col": 5,
-   "row": 14
+   "row": 15
   },
   {
-   "uid": "f-bc6a400195",
+   "uid": "f-f6006164b8",
    "type": "CUSHIONED_CHAIR_BACK",
    "col": 5,
-   "row": 16,
+   "row": 17,
    "color": {
     "h": 222,
     "s": 16,
@@ -4626,22 +4626,22 @@
    }
   },
   {
-   "uid": "f-a7b4dc67a1",
+   "uid": "f-3424873896",
    "type": "DESK_FRONT",
    "col": 9,
-   "row": 14
+   "row": 15
   },
   {
-   "uid": "f-afa2617043",
+   "uid": "f-6e72baa78d",
    "type": "PC_FRONT_OFF",
    "col": 10,
-   "row": 14
+   "row": 15
   },
   {
-   "uid": "f-726ccb8434",
+   "uid": "f-1ef645dd6a",
    "type": "CUSHIONED_CHAIR_BACK",
    "col": 10,
-   "row": 16,
+   "row": 17,
    "color": {
     "h": 222,
     "s": 16,
@@ -4651,10 +4651,10 @@
    }
   },
   {
-   "uid": "f-4327d96d62",
+   "uid": "f-9a1c3bd8b8",
    "type": "PLANT",
-   "col": 7,
-   "row": 16
+   "col": 3,
+   "row": 6
   },
   {
    "uid": "f-23fc5f6b98",
